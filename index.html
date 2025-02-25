@@ -4,12 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek Verma - Java Enthusiast</title>
+  <link rel="icon" href="Abhishek Verma.png" type="image/png">
+  <title>Abhishek Verma</title>
   <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #fff;
+      --accent-color: #00adb5;
+      --card-bg: #1e1e1e;
+      --hover-scale: 1.05;
+    }
+
+    [data-theme='light'] {
+      --bg-color: #f5f5f5;
+      --text-color: #000;
+      --accent-color: #0077b6;
+      --card-bg: #fff;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       box-sizing: border-box;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.8;
     }
 
     .hero {
@@ -17,7 +36,6 @@
       justify-content: space-between;
       align-items: center;
       padding: 5% 10%;
-      background: #f5f5f5;
     }
 
     .hero-text {
@@ -27,24 +45,38 @@
     .hero-text h1 {
       font-size: 3em;
       margin: 0;
+      background: linear-gradient(90deg, var(--accent-color), #ff5722);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .hero-text button {
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 1em;
       margin-top: 20px;
       cursor: pointer;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      transform: translateY(-3px);
     }
 
     .hero img {
       max-width: 40%;
       border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
 
     .divider {
       text-align: center;
       margin: 40px 0;
-      font-size: 2em;
+      font-size: 2.5em;
+      color: var(--accent-color);
     }
 
     .playlist-container {
@@ -56,11 +88,27 @@
 
     .playlist-item {
       text-align: center;
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .playlist-item:hover {
+      transform: scale(var(--hover-scale));
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
     .playlist-item img {
       width: 100%;
-      border-radius: 12px;
+      display: block;
+    }
+
+    .playlist-item p {
+      padding: 15px;
+      font-size: 1.2em;
+      margin: 0;
     }
 
     .footer {
@@ -71,80 +119,214 @@
     .footer img {
       margin: 0 10px;
     }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .slider {
+      position: relative;
+      width: 50px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      transition: background 0.3s;
+    }
+
+    .slider::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    [data-theme='light'] .slider {
+      background: #666;
+    }
+
+    [data-theme='light'] .slider::before {
+      transform: translateX(26px);
+    }
+
+    .icon {
+      margin-left: 10px;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 
-<body>
-
+<body data-theme="dark">
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <div class="slider"></div>
+    <span class="icon" id="theme-icon">🌙</span>
+  </div>
   <section class="hero">
     <div class="hero-text">
-      <h1>Hi Techies/Learners, I am Abhishek Verma</h1>
+      <h1>Helloooo everyone, I am Abhishek Verma</h1>
       <button onclick="location.href='about.html'">Who am I?</button>
     </div>
-    <img src="your-image.jpg" alt="Abhishek Verma">
+    <img src="Abhishek Verma.png" alt="Abhishek Verma">
   </section>
-
-  <div class="divider">My Videos</div>
-
+  <div class="divider">My Techical Playlists</div>
   <div class="playlist-container">
     <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_LINK" target="_blank">
-        <img src="thumbnail1.jpg" alt="Playlist 1">
+      <a href="https://youtu.be/REGb1Vw_G5s" target="_blank">
+        <img src="Java Developer Roadmap.jpg" alt="Java Developer Roadmap">
       </a>
-      <p>Playlist 1</p>
+      <p>Java Developer Roadmap</p>
     </div>
-
     <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_LINK" target="_blank">
-        <img src="thumbnail2.jpg" alt="Playlist 2">
+      <a href="https://abhishekvermaa10.github.io" target="_blank">
+        <img src="Java Basics.png" alt="Java Basics">
       </a>
-      <p>Playlist 2</p>
+      <p>Java Basics</p>
     </div>
-
     <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_LINK" target="_blank">
-        <img src="thumbnail3.jpg" alt="Playlist 3">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-" target="_blank">
+        <img src="Java Advanced.png" alt="Java Advanced">
       </a>
-      <p>Playlist 3</p>
-    </div>
-
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_LINK" target="_blank">
-        <img src="thumbnail4.jpg" alt="Playlist 4">
-      </a>
-      <p>Playlist 4</p>
+      <p>Java Advanced</p>
     </div>
   </div>
-
+  <div class="playlist-container">
+    <div class="playlist-item">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP1FroiBGc7N3-r67VaEp0V" target="_blank">
+        <img src="Java Database Connectivity (JDBC).png" alt="Java Database Connectivity (JDBC)">
+      </a>
+      <p>Java Database Connectivity (JDBC)</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfMNgiOg0xyg4hVsPcJUh4jE" target="_blank">
+        <img src="Maven.png" alt="Maven">
+      </a>
+      <p>Maven</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfNYPqMMqNj7DXl41fnTVJuY" target="_blank">
+        <img src="Hibernate.png" alt="Hibernate">
+      </a>
+      <p>Hibernate</p>
+    </div>
+  </div>
+  <div class="playlist-container">
+    <div class="playlist-item">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfO7BUlQk_di-86igrzgnsGo" target="_blank">
+        <img src="Spring Basics with Spring Boot.png" alt="Spring Basics with Spring Boot">
+      </a>
+      <p>Spring Basics with Spring Boot</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7_jffHmF_6MooTlH7rO" target="_blank">
+        <img src="Spring Data JPA with Spring Boot.png" alt="Spring Data JPA with Spring Boot">
+      </a>
+      <p>Spring Data JPA with Spring Boot</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA" target="_blank">
+        <img src="Spring REST with Spring Boot.png" alt="Spring REST with Spring Boot">
+      </a>
+      <p>Spring REST with Spring Boot</p>
+    </div>
+  </div>
+  <div class="divider">My Software Installation Videos</div>
+  <div class="playlist-container">
+    <div class="playlist-item">
+      <a href="https://youtu.be/yHb5Utp1tL0" target="_blank">
+        <img src="Java 21.jpg" alt="Java 21">
+      </a>
+      <p>Java 21</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://youtu.be/PRLeTElWQPw" target="_blank">
+        <img src="Spring Tool Suite.jpg" alt="Spring Tool Suite">
+      </a>
+      <p>Spring Tool Suite</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://youtu.be/Uj2sBLDbc4s" target="_blank">
+        <img src="Maven.png" alt="Maven">
+      </a>
+      <p>Maven</p>
+    </div>
+  </div>
+  <div class="playlist-container">
+    <div class="playlist-item">
+      <a href="https://youtu.be/HIp492L73eE" target="_blank">
+        <img src="MySQL.jpg" alt="MySQL">
+      </a>
+      <p>MySQL</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://youtu.be/begjE2_DlIg" target="_blank">
+        <img src="DBeaver.jpg" alt="DBeaver">
+      </a>
+      <p>DBeaver</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://youtu.be/0J9Yciy-O38" target="_blank">
+        <img src="Postman.jpg" alt="Postman">
+      </a>
+      <p>Postman</p>
+    </div>
+  </div>
+  <div class="divider">My Non-Technical Videos</div>
+  <div class="playlist-container">
+    <div class="playlist-item">
+      <a href="https://youtu.be/9G1n53T3Qas" target="_blank">
+        <img src="My IT Journey.jpg" alt="My IT Journey (English)">
+      </a>
+      <p>My IT Journey (English)</p>
+    </div>
+    <div class="playlist-item">
+      <a href="https://youtu.be/WqRhGYA0cN8" target="_blank">
+        <img src="My IT Journey.jpg" alt="My IT Journey (Hindi)">
+      </a>
+      <p>My IT Journey (Hindi)</p>
+    </div>
+  </div>
   <div class="footer">
     <p><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
-    <hr>
     <h3>🌐 Connect with me</h3>
     <p>
       <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/YouTube.svg" alt="YouTube" height="30" width="40" />
-      </a>
+        <img align="center" src="YouTube.svg" alt="YouTube" height="30" width="40" />
+      </a> &nbsp;&nbsp;
       <a href="https://linkedin.com/in/abhishekvermaa10" target="_blank">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/LinkedIn.svg" alt="LinkedIn" height="30" width="40" />
-      </a>
+        <img align="center" src="LinkedIn.svg" alt="LinkedIn" height="30" width="40" />
+      </a> &nbsp;&nbsp;
       <a href="https://instagram.com/abhishekvermaa10" target="_blank">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/Instagram.svg" alt="Instagram" height="30" width="40" />
-      </a>
+        <img align="center" src="Instagram.svg" alt="Instagram" height="30" width="40" />
+      </a> &nbsp;&nbsp;
       <a href="https://x.com/ytabhishekverma" target="_blank">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/X.svg" alt="X" height="30" width="40" />
-      </a>
+        <img align="center" src="X.svg" alt="X" height="30" width="40" />
+      </a> &nbsp;&nbsp;
       <a href="https://github.com/abhishekvermaa10" target="_blank">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/GitHub.svg" alt="GitHub" height="30" width="40" />
-      </a>
+        <img align="center" src="GitHub.svg" alt="GitHub" height="30" width="40" />
+      </a> &nbsp;&nbsp;
       <a href="https://topmate.io/abhishekvermaa10" target="_blank">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/TopMate.svg" alt="TopMate" height="30" width="40" />
-      </a>
+        <img align="center" src="TopMate.svg" alt="TopMate" height="30" width="40" />
+      </a> &nbsp;&nbsp;
       <a href="mailto:scaleupindiayt@gmail.com">
-        <img src="https://github.com/abhishekvermaa10/Logos/blob/main/GMail.svg" alt="GMail" height="30" width="40" />
-      </a>
+        <img align="center" src="GMail.svg" alt="GMail" height="30" width="40" />
+      </a> &nbsp;&nbsp;
     </p>
   </div>
-
+  <script>
+    function toggleTheme() {
+      document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.getElementById('theme-icon').textContent = document.body.dataset.theme === 'dark' ? '🌙' : '☀️';
+    }
+  </script>
 </body>
 
 </html>

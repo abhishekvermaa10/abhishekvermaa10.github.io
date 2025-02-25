@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Abhishek Verma.png" type="image/png">
+  <title>Abhishek Verma</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #fff;
+      --accent-color: #00adb5;
+    }
+
+    [data-theme='light'] {
+      --bg-color: #f5f5f5;
+      --text-color: #000;
+      --accent-color: #0077b6;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5% 10%;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3em;
+      margin: 0;
+      background: linear-gradient(90deg, var(--accent-color), #ff5722);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text button {
+      padding: 12px 24px;
+      font-size: 1em;
+      margin-top: 20px;
+      cursor: pointer;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      transform: translateY(-3px);
+    }
+
+    .hero img {
+      max-width: 40%;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .divider {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 2.5em;
+      color: var(--accent-color);
+    }
+
+    .about-section {
+      padding: 0 10%;
+      text-align: justify;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .footer img {
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .footer img:hover {
+      transform: scale(1.2);
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .slider {
+      position: relative;
+      width: 50px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      transition: background 0.3s;
+    }
+
+    .slider::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    [data-theme='light'] .slider {
+      background: #666;
+    }
+
+    [data-theme='light'] .slider::before {
+      transform: translateX(26px);
+    }
+
+    .icon {
+      margin-left: 10px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body data-theme="dark">
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <div class="slider"></div>
+    <span class="icon" id="theme-icon">🌙</span>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Helloooo everyone, I am Abhishek Verma</h1>
+      <button onclick="location.href='index.html'">Check my content</button>
+    </div>
+    <img src="Abhishek Verma.png" alt="Abhishek Verma">
+  </section>
+
+  <div class="divider">About Me</div>
+
+  <div class="about-section">
+    <p align="justify">
+      I am a seasoned <b>Java and Spring Boot Developer</b> with over <b>7 years</b> of experience in building
+      enterprise-level applications on the Spring stack.
+      My expertise extends beyond frameworks, as I'm a <b>certified Oracle Java 11 developer</b> with a strong foundation
+      in building secure, scalable, and high-performing web applications.
+  </p>
+  
+  <p align="justify">
+      I hold a <b>Bachelor of Engineering (B.E.)</b> in <b>Electronics and Communication</b> from the <b>University
+          Institute of
+          Engineering and Technology, Panjab University, Chandigarh</b>, graduating in <b>2017</b>.
+      During my college years, I gained hands-on industry experience through internships at the <b>National Institute of
+          Technical Teachers Training & Research</b> (2015) and the <b>Terminal Ballistics Research Laboratory</b> (2017),
+      which helped shape my technical understanding and problem-solving approach.
+  </p>
+  
+  <p align="justify">
+      My professional journey started at <b>Infosys</b> (2017), where I honed my skills and built a strong foundation in
+      software development.
+      Seeking new challenges, I transitioned to <b>Nagarro</b> (2022), where I worked on FinTech projects, gaining
+      valuable experience in high-scale, transaction-heavy applications.
+      Currently, I am a <b>Senior Software Engineer</b> at <b>Exerp</b> (since 2024), contributing to fitness-related
+      projects that enhance user experiences in the health and wellness domain.
+  </p>
+  
+  <p align="justify">
+      Beyond my role as a developer, I am also a <b>tech educator and content creator</b>.
+      I run the <b>Abhishek Verma YouTube channel</b>, where I create engaging and insightful Java tutorials for
+      developers at all levels.
+      My mission is to make Java learning <b>accessible, practical, and fun</b>, and I take pride in building a thriving
+      community of passionate learners.
+  </p>
+  
+  <p align="justify">
+      I strongly believe that quality education and knowledge should be <b>freely accessible</b>, which is why I
+      consistently provide <b>high-quality content</b> on my <b>YouTube</b> and <b>Instagram</b> channels.
+      However, for those looking for a personalized <b>1:1 career discussion</b>, I also offer mentorship sessions on
+      <b>TopMate</b> at a nominal price.
+  </p>
+  </div>
+  <div class="footer">
+    <p><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
+    <h3>🌐 Connect with me</h3>
+    <p>
+      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank">
+        <img align="center" src="YouTube.svg" alt="YouTube" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+      <a href="https://linkedin.com/in/abhishekvermaa10" target="_blank">
+        <img align="center" src="LinkedIn.svg" alt="LinkedIn" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+      <a href="https://instagram.com/abhishekvermaa10" target="_blank">
+        <img align="center" src="Instagram.svg" alt="Instagram" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+      <a href="https://x.com/ytabhishekverma" target="_blank">
+        <img align="center" src="X.svg" alt="X" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+      <a href="https://github.com/abhishekvermaa10" target="_blank">
+        <img align="center" src="GitHub.svg" alt="GitHub" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+      <a href="https://topmate.io/abhishekvermaa10" target="_blank">
+        <img align="center" src="TopMate.svg" alt="TopMate" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+      <a href="mailto:scaleupindiayt@gmail.com">
+        <img align="center" src="GMail.svg" alt="GMail" height="30" width="40" />
+      </a> &nbsp;&nbsp;
+    </p>
+  </div>
+  <script>
+    function toggleTheme() {
+      document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.getElementById('theme-icon').textContent = document.body.dataset.theme === 'dark' ? '🌙' : '☀️';
+    }
+  </script>
+</body>
+
+</html>
