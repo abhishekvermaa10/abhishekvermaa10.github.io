@@ -224,9 +224,9 @@
 
 <body data-theme="dark">
   <div class="theme-toggle" onclick="toggleTheme()">
-    <span class="icon">🌙</span>
+    <i class="uil uil-moon icon"></i>
     <div class="slider" id="slider"></div>
-    <span class="icon">☀️</span>
+    <i class="uil uil-sun icon"></i>
   </div>
   <section class="hero">
     <div class="hero-text">
@@ -235,7 +235,7 @@
     </div>
     <img src="static/Abhishek Verma.png" alt="Abhishek Verma">
   </section>
-  <div class="divider">My Techical Playlists</div>
+  <div class="divider"><b>My Technical Playlists</b></div>
   <div class="playlist-container">
     <div class="playlist-item">
       <a href="https://youtu.be/REGb1Vw_G5s" target="_blank">
@@ -294,7 +294,7 @@
       <p>Spring REST with Spring Boot</p>
     </div>
   </div>
-  <div class="divider">My Software Installation Videos</div>
+  <div class="divider"><b>My Software Installation Videos</b></div>
   <div class="playlist-container">
     <div class="playlist-item">
       <a href="https://youtu.be/yHb5Utp1tL0" target="_blank">
@@ -335,7 +335,7 @@
       <p>Postman</p>
     </div>
   </div>
-  <div class="divider">My Non-Technical Videos</div>
+  <div class="divider"><b>My Non-Technical Videos</b></div>
   <div class="playlist-container">
     <div class="playlist-item">
       <a href="https://youtu.be/9G1n53T3Qas" target="_blank">
@@ -351,8 +351,8 @@
     </div>
   </div>
   <div class="footer">
-    <p><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
-    <h3>🌐 Connect with me</h3>
+    <p><b><i class="uil uil-rocket"></i> Stay healthy, keep learning, and keep growing!</b></p>
+    <h3><i class="uil uil-globe"></i> Connect with me</h3>
     <div class="social-icons">
       <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" aria-label="YouTube"><i
           class="uil uil-youtube"></i></a>
@@ -360,19 +360,18 @@
           class="uil uil-linkedin"></i></a>
       <a href="https://www.instagram.com/abhishekvermaa10" target="_blank" aria-label="Instagram"><i
           class="uil uil-instagram"></i></a>
-      <a href="https://x.com/ytabhishekverma" target="_blank" aria-label="X (Twitter)"><i
+      <a href="https://x.com/ytabhishekverma" target="_blank" aria-label="X"><i
           class="uil uil-twitter"></i></a>
       <a href="https://github.com/abhishekvermaa10" target="_blank" aria-label="GitHub"><i
           class="uil uil-github"></i></a>
       <a href="https://topmate.io/abhishekvermaa10" target="_blank" aria-label="TopMate"><i
-          class="uil uil-user-check"></i></a>
+          class="uil uil-user-circle"></i></a>
       <a href="mailto:scaleupindiayt@email.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
     </div>
   </div>
   <script>
     function toggleTheme() {
       document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.getElementById('theme-icon').textContent = document.body.dataset.theme === 'dark' ? '🌙' : '☀️';
     }
   </script>
 </body>

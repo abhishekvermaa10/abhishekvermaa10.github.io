@@ -209,9 +209,9 @@
 
 <body data-theme="dark">
   <div class="theme-toggle" onclick="toggleTheme()">
-    <span class="icon">🌙</span>
+    <i class="uil uil-moon icon"></i>
     <div class="slider" id="slider"></div>
-    <span class="icon">☀️</span>
+    <i class="uil uil-sun icon"></i>
   </div>
 
   <section class="hero">
@@ -222,7 +222,7 @@
     <img src="../static/Abhishek Verma.png" alt="Abhishek Verma">
   </section>
 
-  <div class="divider">About Me</div>
+  <div class="divider"><b>About Me</b></div>
 
   <div class="about-section">
     <p align="justify">
@@ -267,8 +267,8 @@
     </p>
   </div>
   <div class="footer">
-    <p><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
-    <h3>🌐 Connect with me</h3>
+    <p><b><i class="uil uil-rocket"></i> Stay healthy, keep learning, and keep growing!</b></p>
+    <h3><i class="uil uil-globe"></i> Connect with me</h3>
     <div class="social-icons">
       <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" aria-label="YouTube"><i
           class="uil uil-youtube"></i></a>
@@ -276,19 +276,18 @@
           class="uil uil-linkedin"></i></a>
       <a href="https://www.instagram.com/abhishekvermaa10" target="_blank" aria-label="Instagram"><i
           class="uil uil-instagram"></i></a>
-      <a href="https://x.com/ytabhishekverma" target="_blank" aria-label="X (Twitter)"><i
+      <a href="https://x.com/ytabhishekverma" target="_blank" aria-label="X"><i
           class="uil uil-twitter"></i></a>
       <a href="https://github.com/abhishekvermaa10" target="_blank" aria-label="GitHub"><i
           class="uil uil-github"></i></a>
       <a href="https://topmate.io/abhishekvermaa10" target="_blank" aria-label="TopMate"><i
-          class="uil uil-user-check"></i></a>
+          class="uil uil-link"></i></a>
       <a href="mailto:scaleupindiayt@email.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
     </div>
   </div>
   <script>
     function toggleTheme() {
       document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.getElementById('theme-icon').textContent = document.body.dataset.theme === 'dark' ? '🌙' : '☀️';
     }
   </script>
 </body>
