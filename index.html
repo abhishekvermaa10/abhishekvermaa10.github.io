@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="Abhishek Verma.png" type="image/png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <title>Abhishek Verma</title>
   <style>
     :root {
@@ -13,6 +14,7 @@
       --accent-color: #00adb5;
       --card-bg: #1e1e1e;
       --hover-scale: 1.05;
+      --icon-color: white;
     }
 
     [data-theme='light'] {
@@ -20,6 +22,7 @@
       --text-color: #000;
       --accent-color: #0077b6;
       --card-bg: #fff;
+      --icon-color: black;
     }
 
     body {
@@ -36,6 +39,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 5% 10%;
+      gap: 20px;
     }
 
     .hero-text {
@@ -70,6 +74,41 @@
       max-width: 40%;
       border-radius: 20px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10% 5%;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-text h1 {
+        font-size: 2em;
+      }
+
+      .hero img {
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.8em;
+      }
+
+      .hero img {
+        max-width: 90%;
+      }
+
+      .hero-text button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
     }
 
     .divider {
@@ -121,7 +160,7 @@
     }
 
     .theme-toggle {
-      position: fixed;
+      position: absolute;
       top: 20px;
       right: 20px;
       display: flex;
@@ -162,18 +201,37 @@
       margin-left: 10px;
       font-size: 1.2em;
     }
+
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: var(--icon-color);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 
 <body data-theme="dark">
   <div class="theme-toggle" onclick="toggleTheme()">
-    <div class="slider"></div>
-    <span class="icon" id="theme-icon">🌙</span>
+    <span class="icon">🌙</span>
+    <div class="slider" id="slider"></div>
+    <span class="icon">☀️</span>
   </div>
   <section class="hero">
     <div class="hero-text">
       <h1>Helloooo everyone, I am Abhishek Verma</h1>
-      <button onclick="location.href='about.html'">Who am I?</button>
+      <button onclick="location.href='../about/'">Who am I?</button>
     </div>
     <img src="Abhishek Verma.png" alt="Abhishek Verma">
   </section>
@@ -297,29 +355,21 @@
   <div class="footer">
     <p><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
     <h3>🌐 Connect with me</h3>
-    <p>
-      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank">
-        <img align="center" src="YouTube.svg" alt="YouTube" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://linkedin.com/in/abhishekvermaa10" target="_blank">
-        <img align="center" src="LinkedIn.svg" alt="LinkedIn" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://instagram.com/abhishekvermaa10" target="_blank">
-        <img align="center" src="Instagram.svg" alt="Instagram" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://x.com/ytabhishekverma" target="_blank">
-        <img align="center" src="X.svg" alt="X" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://github.com/abhishekvermaa10" target="_blank">
-        <img align="center" src="GitHub.svg" alt="GitHub" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://topmate.io/abhishekvermaa10" target="_blank">
-        <img align="center" src="TopMate.svg" alt="TopMate" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="mailto:scaleupindiayt@gmail.com">
-        <img align="center" src="GMail.svg" alt="GMail" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-    </p>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" aria-label="YouTube"><i
+          class="uil uil-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank" aria-label="LinkedIn"><i
+          class="uil uil-linkedin"></i></a>
+      <a href="https://www.instagram.com/abhishekvermaa10" target="_blank" aria-label="Instagram"><i
+          class="uil uil-instagram"></i></a>
+      <a href="https://twitter.com/abhishekvermaa10" target="_blank" aria-label="X (Twitter)"><i
+          class="uil uil-twitter"></i></a>
+      <a href="https://github.com/abhishekvermaa10" target="_blank" aria-label="GitHub"><i
+          class="uil uil-github"></i></a>
+      <a href="https://topmate.io/abhishekvermaa10" target="_blank" aria-label="TopMate"><i
+          class="uil uil-user-check"></i></a>
+      <a href="mailto:scaleupindiayt@email.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
+    </div>
   </div>
   <script>
     function toggleTheme() {

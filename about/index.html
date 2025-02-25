@@ -5,18 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="Abhishek Verma.png" type="image/png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <title>Abhishek Verma</title>
   <style>
     :root {
       --bg-color: #121212;
       --text-color: #fff;
       --accent-color: #00adb5;
+      --icon-color: white;
     }
 
     [data-theme='light'] {
       --bg-color: #f5f5f5;
       --text-color: #000;
       --accent-color: #0077b6;
+      --icon-color: black;
     }
 
     body {
@@ -33,7 +36,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 5% 10%;
-      flex-wrap: wrap;
+      gap: 20px;
     }
 
     .hero-text {
@@ -70,6 +73,41 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     }
 
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10% 5%;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-text h1 {
+        font-size: 2em;
+      }
+
+      .hero img {
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.8em;
+      }
+
+      .hero img {
+        max-width: 90%;
+      }
+
+      .hero-text button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+    }
+
     .divider {
       text-align: center;
       margin: 40px 0;
@@ -87,6 +125,7 @@
       from {
         opacity: 0;
       }
+
       to {
         opacity: 1;
       }
@@ -107,7 +146,7 @@
     }
 
     .theme-toggle {
-      position: fixed;
+      position: absolute;
       top: 20px;
       right: 20px;
       display: flex;
@@ -148,19 +187,37 @@
       margin-left: 10px;
       font-size: 1.2em;
     }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: var(--icon-color);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 
 <body data-theme="dark">
   <div class="theme-toggle" onclick="toggleTheme()">
-    <div class="slider"></div>
-    <span class="icon" id="theme-icon">🌙</span>
+    <span class="icon">🌙</span>
+    <div class="slider" id="slider"></div>
+    <span class="icon">☀️</span>
   </div>
 
   <section class="hero">
-    <div class="hero-text">
+    <div class="hero-text">s
       <h1>Helloooo everyone, I am Abhishek Verma</h1>
-      <button onclick="location.href='index.html'">Check my content</button>
+      <button onclick="location.href='../'">Check my content</button>
     </div>
     <img src="Abhishek Verma.png" alt="Abhishek Verma">
   </section>
@@ -171,69 +228,62 @@
     <p align="justify">
       I am a seasoned <b>Java and Spring Boot Developer</b> with over <b>7 years</b> of experience in building
       enterprise-level applications on the Spring stack.
-      My expertise extends beyond frameworks, as I'm a <b>certified Oracle Java 11 developer</b> with a strong foundation
+      My expertise extends beyond frameworks, as I'm a <b>certified Oracle Java 11 developer</b> with a strong
+      foundation
       in building secure, scalable, and high-performing web applications.
-  </p>
-  
-  <p align="justify">
+    </p>
+
+    <p align="justify">
       I hold a <b>Bachelor of Engineering (B.E.)</b> in <b>Electronics and Communication</b> from the <b>University
-          Institute of
-          Engineering and Technology, Panjab University, Chandigarh</b>, graduating in <b>2017</b>.
+        Institute of
+        Engineering and Technology, Panjab University, Chandigarh</b>, graduating in <b>2017</b>.
       During my college years, I gained hands-on industry experience through internships at the <b>National Institute of
-          Technical Teachers Training & Research</b> (2015) and the <b>Terminal Ballistics Research Laboratory</b> (2017),
+        Technical Teachers Training & Research</b> (2015) and the <b>Terminal Ballistics Research Laboratory</b> (2017),
       which helped shape my technical understanding and problem-solving approach.
-  </p>
-  
-  <p align="justify">
+    </p>
+
+    <p align="justify">
       My professional journey started at <b>Infosys</b> (2017), where I honed my skills and built a strong foundation in
       software development.
       Seeking new challenges, I transitioned to <b>Nagarro</b> (2022), where I worked on FinTech projects, gaining
       valuable experience in high-scale, transaction-heavy applications.
       Currently, I am a <b>Senior Software Engineer</b> at <b>Exerp</b> (since 2024), contributing to fitness-related
       projects that enhance user experiences in the health and wellness domain.
-  </p>
-  
-  <p align="justify">
+    </p>
+
+    <p align="justify">
       Beyond my role as a developer, I am also a <b>tech educator and content creator</b>.
       I run the <b>Abhishek Verma YouTube channel</b>, where I create engaging and insightful Java tutorials for
       developers at all levels.
       My mission is to make Java learning <b>accessible, practical, and fun</b>, and I take pride in building a thriving
       community of passionate learners.
-  </p>
-  
-  <p align="justify">
+    </p>
+
+    <p align="justify">
       I strongly believe that quality education and knowledge should be <b>freely accessible</b>, which is why I
       consistently provide <b>high-quality content</b> on my <b>YouTube</b> and <b>Instagram</b> channels.
       However, for those looking for a personalized <b>1:1 career discussion</b>, I also offer mentorship sessions on
       <b>TopMate</b> at a nominal price.
-  </p>
+    </p>
   </div>
   <div class="footer">
     <p><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
     <h3>🌐 Connect with me</h3>
-    <p>
-      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank">
-        <img align="center" src="YouTube.svg" alt="YouTube" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://linkedin.com/in/abhishekvermaa10" target="_blank">
-        <img align="center" src="LinkedIn.svg" alt="LinkedIn" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://instagram.com/abhishekvermaa10" target="_blank">
-        <img align="center" src="Instagram.svg" alt="Instagram" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://x.com/ytabhishekverma" target="_blank">
-        <img align="center" src="X.svg" alt="X" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://github.com/abhishekvermaa10" target="_blank">
-        <img align="center" src="GitHub.svg" alt="GitHub" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="https://topmate.io/abhishekvermaa10" target="_blank">
-        <img align="center" src="TopMate.svg" alt="TopMate" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-      <a href="mailto:scaleupindiayt@gmail.com">
-        <img align="center" src="GMail.svg" alt="GMail" height="30" width="40" />
-      </a> &nbsp;&nbsp;
-    </p>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" aria-label="YouTube"><i
+          class="uil uil-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank" aria-label="LinkedIn"><i
+          class="uil uil-linkedin"></i></a>
+      <a href="https://www.instagram.com/abhishekvermaa10" target="_blank" aria-label="Instagram"><i
+          class="uil uil-instagram"></i></a>
+      <a href="https://twitter.com/abhishekvermaa10" target="_blank" aria-label="X (Twitter)"><i
+          class="uil uil-twitter"></i></a>
+      <a href="https://github.com/abhishekvermaa10" target="_blank" aria-label="GitHub"><i
+          class="uil uil-github"></i></a>
+      <a href="https://topmate.io/abhishekvermaa10" target="_blank" aria-label="TopMate"><i
+          class="uil uil-user-check"></i></a>
+      <a href="mailto:scaleupindiayt@email.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
+    </div>
   </div>
   <script>
     function toggleTheme() {
