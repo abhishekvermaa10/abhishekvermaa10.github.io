@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../static/Abhishek Verma.png" type="image/png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <title>Abhishek Verma</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #fff;
+      --accent-color: #00adb5;
+      --icon-color: white;
+    }
+
+    [data-theme='light'] {
+      --bg-color: #f5f5f5;
+      --text-color: #000;
+      --accent-color: #0077b6;
+      --icon-color: black;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5% 10%;
+      gap: 20px;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3em;
+      margin: 0;
+      background: linear-gradient(90deg, var(--accent-color), #ff5722);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text button {
+      padding: 12px 24px;
+      font-size: 1em;
+      margin-top: 20px;
+      cursor: pointer;
+      background: var(--accent-color);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      transform: translateY(-3px);
+    }
+
+    .hero img {
+      max-width: 40%;
+      border-radius: 50%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10% 5%;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-text h1 {
+        font-size: 2em;
+      }
+
+      .hero img {
+        max-width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.8em;
+      }
+
+      .hero img {
+        max-width: 90%;
+      }
+
+      .hero-text button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+      }
+    }
+
+    .divider {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 2.5em;
+      color: var(--accent-color);
+    }
+
+    .about-section {
+      padding: 0 10%;
+      text-align: justify;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .footer img {
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .footer img:hover {
+      transform: scale(1.2);
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .slider {
+      position: relative;
+      width: 50px;
+      height: 24px;
+      background: #ccc;
+      border-radius: 12px;
+      transition: background 0.3s;
+    }
+
+    .slider::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    [data-theme='light'] .slider {
+      background: #666;
+    }
+
+    [data-theme='light'] .slider::before {
+      transform: translateX(26px);
+    }
+
+    .icon {
+      margin-left: 10px;
+      font-size: 1.2em;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: var(--icon-color);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body data-theme="dark">
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <i class="uil uil-moon icon"></i>
+    <div class="slider" id="slider"></div>
+    <i class="uil uil-sun icon"></i>
+  </div>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Helloooo everyone, I am Abhishek Verma</h1>
+      <button onclick="location.href='../'">Check my content</button>
+    </div>
+    <img src="../static/Abhishek Verma.png" alt="Abhishek Verma">
+  </section>
+
+  <div class="divider"><b>Java Basics Content</b></div>
+
+  <div class="about-section">
+    <p align="justify">
+      I believe the best way to start learning Java is by using your college book. Any book will work, as long as it covers the following concepts in detail, in the given sequence.
+    </p>
+  
+    <h3>💡 Core Java Basics</h3>
+    <ol>
+      <li>Why Java?</li>
+      <li>What is Java?</li>
+      <li>Java Architecture (JDK, JRE & JVM)</li>
+      <li>First Hello World Program</li>
+      <li>Class, Method & Object (Structure & Naming Practices)</li>
+      <li>Data Types (Primitive & Non-Primitive)</li>
+      <li>Variables (Declaration, Initialization & Naming Practices)</li>
+      <li>Keywords & Reserved Words</li>
+      <li>Comments (Single-line & Multi-line)</li>
+      <li>Operators (Arithmetic, Bitwise, Shift, Relational, Ternary & Logical)</li>
+      <li>Type Casting (Implicit & Explicit)</li>
+    </ol>
+  
+    <h3>📊 Control Flow & Arrays</h3>
+    <ol start="12">
+      <li>Conditional Statements (if, else & switch)</li>
+      <li>Loops (for, while & do-while)</li>
+      <li>break & continue Keywords</li>
+      <li>Arrays (1D & 2D Arrays & Array of Objects)</li>
+      <li>Enhanced For Loop</li>
+    </ol>
+  
+    <h3>🔍 Object-Oriented Programming (OOP)</h3>
+    <ol start="17">
+      <li>OOP Principles (Encapsulation, Inheritance, Polymorphism & Abstraction)</li>
+      <li>Packages & Imports</li>
+      <li>Constructors (Default & Parameterized)</li>
+      <li><code>this</code> Keyword</li>
+      <li>Inheritance (Single, Multilevel & Hierarchical)</li>
+      <li>Instanceof Operator</li>
+      <li>Polymorphism (Method Overloading & Method Overriding)</li>
+      <li>Access Modifiers (public, private, protected & default)</li>
+      <li><code>super</code> Keyword</li>
+      <li><code>final</code> Keyword (Variables, Methods & Classes)</li>
+      <li><code>static</code> Modifier (Variables, Methods & Blocks)</li>
+      <li>Variable Arguments (Varargs)</li>
+      <li>Abstract Class</li>
+      <li>Interface (Including default, static & private methods)</li>
+    </ol>
+  
+    <h3>🧰 Essential Java Utilities</h3>
+    <ol start="31">
+      <li>Annotations (Built-in & Custom)</li>
+      <li>Object Class (toString(), equals(), hashCode(), etc.)</li>
+      <li>String Class (Immutable & Methods)</li>
+      <li>StringBuilder Class (Mutable Strings)</li>
+      <li>Scanner Class (User Input)</li>
+      <li>Inner Classes (Local, Anonymous, Static & Member Inner Classes)</li>
+      <li>Garbage Collection & Memory Management</li>
+      <li>Enumeration (Enums)</li>
+      <li>Record (Immutable Data Class in Java)</li>
+    </ol>
+  
+    <p align="justify">
+      After mastering these topics, check out my <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-" target="_blank"><strong>Java Advanced</strong></a> playlist to dive into more complex concepts.
+    </p>
+  </div>
+  
+  <div class="footer">
+    <p><b><i class="uil uil-rocket"></i> Stay healthy, keep learning, and keep growing!</b></p>
+    <p>
+      <img alt="Total Views" src="https://hits.sh/abhishekverma.github.io.svg?style=plastic&label=Total Views" />
+    </p>
+    <h3><i class="uil uil-globe"></i> Connect with me</h3>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" aria-label="YouTube"><i
+          class="uil uil-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank" aria-label="LinkedIn"><i
+          class="uil uil-linkedin"></i></a>
+      <a href="https://www.instagram.com/abhishekvermaa10" target="_blank" aria-label="Instagram"><i
+          class="uil uil-instagram"></i></a>
+      <a href="https://x.com/ytabhishekverma" target="_blank" aria-label="X"><i class="uil uil-twitter"></i></a>
+      <a href="https://github.com/abhishekvermaa10" target="_blank" aria-label="GitHub"><i
+          class="uil uil-github"></i></a>
+      <a href="https://topmate.io/abhishekvermaa10" target="_blank" aria-label="TopMate"><i
+          class="uil uil-link"></i></a>
+      <a href="mailto:scaleupindiayt@email.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
+    </div>
+    <p>Copyright © 2025 Abhishek Verma - All Rights Reserved</p>
+  </div>
+  <script>
+    function toggleTheme() {
+      document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    }
+  </script>
+</body>
+
+</html>
