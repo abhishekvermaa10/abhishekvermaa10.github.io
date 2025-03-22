@@ -453,7 +453,7 @@ body.light .basics-category ol {
 .basics-category code {
     background: #2a2a2a;
     color: #00ffcc;
-    padding: 2px 6px;
+    
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
 }
