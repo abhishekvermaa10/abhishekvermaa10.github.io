@@ -4,399 +4,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="static/Abhishek Verma.png" type="image/png">
+  <meta name="description"
+    content="Learn Java with Abhishek Verma's developer roadmap, YouTube tutorials, and beginner-friendly content.">
+  <meta name="keywords"
+    content="Java roadmap, Java tutorials, learn Java, Abhishek Verma, Java programming, Spring Boot, Microservices, coding, Java developer">
+  <meta name="author" content="Abhishek Verma">
+  <title>Learn with Abhishek Verma</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-  <title>Abhishek Verma</title>
-  <style>
-    :root {
-      --bg-color: #121212;
-      --text-color: #fff;
-      --accent-color: #00adb5;
-      --card-bg: #1e1e1e;
-      --hover-scale: 1.05;
-      --icon-color: white;
-    }
-
-    [data-theme='light'] {
-      --bg-color: #f5f5f5;
-      --text-color: #000;
-      --accent-color: #0077b6;
-      --card-bg: #fff;
-      --icon-color: black;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      box-sizing: border-box;
-      background: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.8;
-    }
-
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5% 10%;
-      gap: 20px;
-    }
-
-    .hero-text {
-      max-width: 50%;
-    }
-
-    .hero-text h1 {
-      font-size: 3em;
-      margin: 0;
-      background: linear-gradient(90deg, var(--accent-color), #ff5722);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-text button {
-      padding: 12px 24px;
-      font-size: 1em;
-      margin-top: 20px;
-      cursor: pointer;
-      background: var(--accent-color);
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
-    }
-
-    .hero-text button:hover {
-      transform: translateY(-3px);
-    }
-
-    .hero img {
-      max-width: 40%;
-      border-radius: 50%;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
-    }
-
-    @media (max-width: 768px) {
-      .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding: 10% 5%;
-      }
-
-      .hero-text {
-        max-width: 100%;
-      }
-
-      .hero-text h1 {
-        font-size: 2em;
-      }
-
-      .hero img {
-        max-width: 80%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-text h1 {
-        font-size: 1.8em;
-      }
-
-      .hero img {
-        max-width: 90%;
-      }
-
-      .hero-text button {
-        padding: 10px 20px;
-        font-size: 0.9em;
-      }
-    }
-
-    .divider {
-      text-align: center;
-      margin: 40px 0;
-      font-size: 2.5em;
-      color: var(--accent-color);
-    }
-
-    .playlist-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 10%;
-    }
-
-    .playlist-item {
-      text-align: center;
-      background: var(--card-bg);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .playlist-item:hover {
-      transform: scale(var(--hover-scale));
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-
-    .playlist-item img {
-      width: 100%;
-      display: block;
-    }
-
-    .playlist-item p {
-      padding: 15px;
-      font-size: 1.2em;
-      margin: 0;
-    }
-
-    .footer {
-      text-align: center;
-      margin: 50px 0;
-    }
-
-    .footer img {
-      margin: 0 10px;
-    }
-
-    .theme-toggle {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .slider {
-      position: relative;
-      width: 50px;
-      height: 24px;
-      background: #ccc;
-      border-radius: 12px;
-      transition: background 0.3s;
-    }
-
-    .slider::before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      width: 18px;
-      height: 18px;
-      background: #fff;
-      border-radius: 50%;
-      transition: transform 0.3s;
-    }
-
-    [data-theme='light'] .slider {
-      background: #666;
-    }
-
-    [data-theme='light'] .slider::before {
-      transform: translateX(26px);
-    }
-
-    .icon {
-      margin-left: 10px;
-      font-size: 1.2em;
-    }
-
-
-    .social-icons {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      font-size: 2rem;
-      color: var(--icon-color);
-      transition: transform 0.3s ease, color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-    }
-  </style>
+  <link rel="icon" href="static/Abhishek Verma.png" type="image/x-icon">
 </head>
 
-<body data-theme="dark">
-  <div class="theme-toggle" onclick="toggleTheme()">
-    <i class="uil uil-moon icon"></i>
-    <div class="slider" id="slider"></div>
-    <i class="uil uil-sun icon"></i>
-  </div>
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Helloooo everyone, I am Abhishek Verma</h1>
-      <button onclick="location.href='about/'">Who am I?</button>
+<body class="dark">
+  <header>
+    <div class="profile-pic">
+      <img src="static/Abhishek Verma.png" alt="Abhishek Verma">
     </div>
-    <img src="static/Abhishek Verma.png" alt="Abhishek Verma">
-  </section>
-  <div class="divider"><b>My Technical Playlists</b></div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://youtu.be/REGb1Vw_G5s" target="_blank">
-        <img src="static/Java Developer Roadmap.jpg" alt="Java Developer Roadmap">
-      </a>
-      <p>Java Developer Roadmap</p>
+    <h1>Become Java Developer with Abhishek Verma</h1>
+    <nav>
+      <a href="about/">About Me</a>
+    </nav>
+    <div class="marquee">
+      <span>Latest Update: New videos of Spring REST playlist every Wednesday and Saturday at 8 PM IST | New coding
+        shorts daily at 8 PM IST | Fun Fact: Subscribing me on YouTube is completely FREE for regular updates</span>
     </div>
-    <div class="playlist-item">
-      <a href="Java Basics/">
-        <img src="static/Java Basics.png" alt="Java Basics">
-      </a>
-      <p>Java Basics</p>
+    <div class="header-right">
+      <img alt="Total Views" src="https://hits.sh/abhishekverma.github.io.svg?style=plastic&label=Total Views"
+        class="visitor-badge" />
+      <button id="theme-toggle"><span class="theme-icon">☀️</span></button>
     </div>
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-" target="_blank">
-        <img src="static/Java Advanced.png" alt="Java Advanced">
-      </a>
-      <p>Java Advanced</p>
+  </header>
+
+  <main>
+    <section class="roadmap">
+      <h2>My Technical Playlists</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/Java Developer Roadmap.png" alt="Java Developer Roadmap">
+          <h3>Java Developer Roadmap</h3>
+          <p>Explore the complete path to Java mastery.</p>
+          <a href="https://youtu.be/REGb1Vw_G5s" target="_blank" class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Java Basics.png" alt="Java Basics">
+          <h3>Java Basics</h3>
+          <p>Learn the fundamentals of Java coding.</p>
+          <a href="Java Basics/" target="_blank" class="btn">Read Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Java Advanced.png" alt="Java Advanced">
+          <h3>Java Advanced</h3>
+          <p>Deep dive into complex Java topics.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/Java Database Connectivity (JDBC).png" alt="Java Database Connectivity (JDBC)">
+          <h3>Java Database Connectivity (JDBC)</h3>
+          <p>Connect Java to databases with ease.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP1FroiBGc7N3-r67VaEp0V" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Maven.png" alt="Maven">
+          <h3>Maven</h3>
+          <p>Simplify your Java project builds.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfMNgiOg0xyg4hVsPcJUh4jE" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Hibernate.png" alt="Hibernate">
+          <h3>Hibernate</h3>
+          <p>Master ORM for Java applications.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfNYPqMMqNj7DXl41fnTVJuY" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/Spring Basics with Spring Boot.png" alt="Spring Basics with Spring Boot">
+          <h3>Spring Basics with Spring Boot</h3>
+          <p>Kickstart your Spring Boot journey.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfO7BUlQk_di-86igrzgnsGo" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Spring Data JPA with Spring Boot.png" alt="Spring Data JPA with Spring Boot">
+          <h3>Spring Data JPA with Spring Boot</h3>
+          <p>Handle data with Spring Data JPA.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7NmtpvG5tR5TyYctS6yCA" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Spring REST with Spring Boot.png" alt="Spring REST with Spring Boot">
+          <h3>Spring REST with Spring Boot</h3>
+          <p>Build REST APIs with Spring Boot.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="roadmap">
+      <h2>My Shorts Playlists</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/Daily Interview Questions.png" alt="Daily Interview Questions">
+          <h3>Daily Interview Questions</h3>
+          <p>Boost your interview prep daily.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfNd4lw3-DNYqyU07FShIwTE" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Daily 3 Minute Coding.png" alt="Daily 3 Minute Coding">
+          <h3>Daily 3 Minute Coding</h3>
+          <p>Quick coding tips in 3 minutes.</p>
+          <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfMrTe3bSOTz6QCTpNypsA3O" target="_blank"
+            class="btn">Watch Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="roadmap">
+      <h2>My Software Installation Videos</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/Java 21.png" alt="Java 21">
+          <h3>Java 21</h3>
+          <p>Install the latest LTS Java version.</p>
+          <a href="https://youtu.be/yHb5Utp1tL0" target="_blank" class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Spring Tool Suite.png" alt="Spring Tool Suite">
+          <h3>Spring Tool Suite</h3>
+          <p>Install IDE to code applications.</p>
+          <a href="https://youtu.be/PRLeTElWQPw" target="_blank" class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Apache Maven.png" alt="Maven">
+          <h3>Maven</h3>
+          <p>Install Maven to execute commands.</p>
+          <a href="https://youtu.be/Uj2sBLDbc4s" target="_blank" class="btn">Watch Now</a>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/MySQL.png" alt="MySQL">
+          <h3>MySQL</h3>
+          <p>Install MySQL to store data.</p>
+          <a href="https://youtu.be/HIp492L73eE" target="_blank" class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/DBeaver.png" alt="DBeaver">
+          <h3>DBeaver</h3>
+          <p>Install DBeaver for databases.</p>
+          <a href="https://youtu.be/begjE2_DlIg" target="_blank" class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/Postman.png" alt="Postman">
+          <h3>Postman</h3>
+          <p>Install Postman to test APIs.</p>
+          <a href="https://youtu.be/0J9Yciy-O38" target="_blank" class="btn">Watch Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="roadmap">
+      <h2>My Non-Technical Videos</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="static/My IT Journey.png" alt="My IT Journey (English)">
+          <h3>My IT Journey (English)</h3>
+          <p>My story in English for inspiration.</p>
+          <a href="https://youtu.be/9G1n53T3Qas" target="_blank" class="btn">Watch Now</a>
+        </div>
+        <div class="card">
+          <img src="static/My IT Journey.png" alt="My IT Journey (Hindi)">
+          <h3>My IT Journey (Hindi)</h3>
+          <p>My story in Hindi for inspiration.</p>
+          <a href="https://youtu.be/WqRhGYA0cN8" target="_blank" class="btn">Watch Now</a>
+        </div>
+      </div>
+      <button class="share-btn" onclick="sharePage()">Share This Roadmap</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank"><i class="uil uil-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank"><i class="uil uil-linkedin"></i></a>
+      <a href="https://www.instagram.com/abhishekvermaa10" target="_blank"><i class="uil uil-instagram"></i></a>
+      <a href="https://x.com/ytabhishekverma" target="_blank"><i class="uil uil-twitter"></i></a>
+      <a href="https://github.com/abhishekvermaa10" target="_blank"><i class="uil uil-github"></i></a>
+      <a href="https://topmate.io/abhishekvermaa10" target="_blank"><i class="uil uil-user-square"></i></a>
+      <a href="mailto:scaleupindiayt@gmail.com" target="_blank"><i class="uil uil-envelope"></i></a>
     </div>
-  </div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfP1FroiBGc7N3-r67VaEp0V" target="_blank">
-        <img src="static/Java Database Connectivity (JDBC).png" alt="Java Database Connectivity (JDBC)">
-      </a>
-      <p>Java Database Connectivity (JDBC)</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfMNgiOg0xyg4hVsPcJUh4jE" target="_blank">
-        <img src="static/Maven.png" alt="Maven">
-      </a>
-      <p>Maven</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfNYPqMMqNj7DXl41fnTVJuY" target="_blank">
-        <img src="static/Hibernate.png" alt="Hibernate">
-      </a>
-      <p>Hibernate</p>
-    </div>
-  </div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfO7BUlQk_di-86igrzgnsGo" target="_blank">
-        <img src="static/Spring Basics with Spring Boot.png" alt="Spring Basics with Spring Boot">
-      </a>
-      <p>Spring Basics with Spring Boot</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7_jffHmF_6MooTlH7rO" target="_blank">
-        <img src="static/Spring Data JPA with Spring Boot.png" alt="Spring Data JPA with Spring Boot">
-      </a>
-      <p>Spring Data JPA with Spring Boot</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA" target="_blank">
-        <img src="static/Spring REST with Spring Boot.png" alt="Spring REST with Spring Boot">
-      </a>
-      <p>Spring REST with Spring Boot</p>
-    </div>
-  </div>
-  <div class="divider"><b>My Shorts Playlists</b></div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfNd4lw3-DNYqyU07FShIwTE" target="_blank">
-        <img src="static/Daily Interview Questions.jpg" alt="Daily Interview Questions">
-      </a>
-      <p>Daily Interview Questions</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://www.youtube.com/playlist?list=PLJDwhlqmpSfMrTe3bSOTz6QCTpNypsA3O" target="_blank">
-        <img src="static/Daily 3 minute coding.jpg" alt="Daily 3 Minute Coding">
-      </a>
-      <p>Daily 3 Minute Coding</p>
-    </div>
-  </div>
-  <div class="divider"><b>My Software Installation Videos</b></div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://youtu.be/yHb5Utp1tL0" target="_blank">
-        <img src="static/Java 21.jpg" alt="Java 21">
-      </a>
-      <p>Java 21</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://youtu.be/PRLeTElWQPw" target="_blank">
-        <img src="static/Spring Tool Suite.jpg" alt="Spring Tool Suite">
-      </a>
-      <p>Spring Tool Suite</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://youtu.be/Uj2sBLDbc4s" target="_blank">
-        <img src="static/Maven.jpg" alt="Maven">
-      </a>
-      <p>Maven</p>
-    </div>
-  </div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://youtu.be/HIp492L73eE" target="_blank">
-        <img src="static/MySQL.jpg" alt="MySQL">
-      </a>
-      <p>MySQL</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://youtu.be/begjE2_DlIg" target="_blank">
-        <img src="static/DBeaver.jpg" alt="DBeaver">
-      </a>
-      <p>DBeaver</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://youtu.be/0J9Yciy-O38" target="_blank">
-        <img src="static/Postman.jpg" alt="Postman">
-      </a>
-      <p>Postman</p>
-    </div>
-  </div>
-  <div class="divider"><b>My Non-Technical Videos</b></div>
-  <div class="playlist-container">
-    <div class="playlist-item">
-      <a href="https://youtu.be/9G1n53T3Qas" target="_blank">
-        <img src="static/My IT Journey.jpg" alt="My IT Journey (English)">
-      </a>
-      <p>My IT Journey (English)</p>
-    </div>
-    <div class="playlist-item">
-      <a href="https://youtu.be/WqRhGYA0cN8" target="_blank">
-        <img src="static/My IT Journey.jpg" alt="My IT Journey (Hindi)">
-      </a>
-      <p>My IT Journey (Hindi)</p>
-    </div>
-  </div>
-  <div class="footer">
-    <p><b><i class="uil uil-rocket"></i> Stay healthy, keep learning, and keep growing!</b></p>
-    <p>
-      <img alt="Total Views" src="https://hits.sh/abhishekverma.github.io.svg?style=plastic&label=Total Views" />
-    </p>
-    <h3><i class="uil uil-globe"></i> Connect with me</h3>
-    <div class="social-icons">
-      <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" aria-label="YouTube"><i
-          class="uil uil-youtube"></i></a>
-      <a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank" aria-label="LinkedIn"><i
-          class="uil uil-linkedin"></i></a>
-      <a href="https://www.instagram.com/abhishekvermaa10" target="_blank" aria-label="Instagram"><i
-          class="uil uil-instagram"></i></a>
-      <a href="https://x.com/ytabhishekverma" target="_blank" aria-label="X"><i class="uil uil-twitter"></i></a>
-      <a href="https://github.com/abhishekvermaa10" target="_blank" aria-label="GitHub"><i
-          class="uil uil-github"></i></a>
-      <a href="https://topmate.io/abhishekvermaa10" target="_blank" aria-label="TopMate"><i
-          class="uil uil-link"></i></a>
-      <a href="mailto:scaleupindiayt@gmail.com" aria-label="Email"><i class="uil uil-envelope"></i></a>
-    </div>
-    <p>Copyright © 2025 Abhishek Verma - All Rights Reserved</p>
-  </div>
-  <script>
-    function toggleTheme() {
-      document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-    }
-  </script>
+    <p>Stay healthy, keep learning, and keep growing!</p>
+    <p>© 2025 Abhishek Verma. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
