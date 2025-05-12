@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Abhishek Verma</title>
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="Learn Java with Abhishek Verma's developer roadmap, YouTube tutorials, and beginner-friendly content.">
+	<meta name="keywords"
+		content="Java roadmap, Java tutorials, learn Java, Abhishek Verma, Java programming, Spring Boot, Microservices, coding, Java developer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Abhishek Verma">
+	<link href="img/favicon.ico" rel="shortcut icon" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<header class="header-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="nav-switch">
+						<i class="fa fa-bars"></i>
+					</div>
+				</div>
+				<div class="col-lg-9 col-md-9">
+					<a href="https://www.youtube.com/@abhishekvermaa10" class="site-btn header-btn">Join Community</a>
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="about.html">About Me</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page-info-section set-bg" data-setbg="img/page-bg/1.jpg">
+		<div class="container">
+			<div class="site-breadcrumb">
+				<span>Courses</span>
+			</div>
+		</div>
+	</div>
+	<section class="search-section ss-other-page">
+		<div class="container">
+			<div class="search-warp">
+				<div class="section-title text-white">
+					<h2><span>Search your course</span></h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-10 offset-lg-1">
+						<form class="course-search-form">
+							<input type="text" id="courseInput" placeholder="Course">
+							<button class="site-btn btn-dark" type="submit">Search Course</button>
+						</form>
+						<ul id="courseSuggestions"
+							style="display:none; list-style:none; background-color:#fff; border:1px solid #ccc;"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="course-section spad">
+		<div class="container">
+			<div class="section-title mb-0">
+				<h2>Featured Courses</h2>
+				<p>Explore my latest and ongoing playlists, designed to offer fresh insights and keep you updated on
+					trending topics.</p>
+			</div>
+		</div>
+		<div class="featured-courses">
+			<div class="featured-course course-item">
+				<a href="spring-rest-with-spring-boot.html" style="text-decoration: none; color: inherit;">
+					<div class="course-thumb set-bg" data-setbg="img/courses/spring_rest_with_spring_boot.png">
+						<div class="price">Price: FREE</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 offset-lg-6 pl-0">
+							<div class="course-info">
+								<div class="course-text">
+									<div class="fet-note">Featured Course</div>
+									<h5>Spring REST with Spring Boot</h5><br>
+									<p>Learn the art of writing efficient REST APIs and build powerful solutions with
+										Spring Boot.</p>
+									<div class="students">24 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="featured-course course-item">
+				<a href="daily-3-minute-coding.html" style="text-decoration: none; color: inherit;">
+					<div class="course-thumb set-bg" data-setbg="img/courses/daily_3_minute_coding.png">
+						<div class="price">Price: FREE</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 pr-0">
+							<div class="course-info">
+								<div class="course-text">
+									<div class="fet-note">Featured Course</div>
+									<h5>Daily 3 minute coding</h5><br>
+									<p>Get quick coding tips and improve your skills in just 3 minutes every day.</p>
+									<div class="students">130 Shorts</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="course-section spad">
+		<div class="container">
+			<div class="section-title mb-0">
+				<h2>All Courses</h2>
+				<p>Browse through all my curated playlists — perfect for beginners following a structured path or for
+					learners who want to dive straight into specific topics of interest.</p>
+			</div>
+		</div>
+		<div class="course-warp">
+			<ul class="course-filter controls">
+				<li class="control active" data-filter="all">All</li>
+				<li class="control" data-filter=".java">Java</li>
+				<li class="control" data-filter=".spring">Spring</li>
+				<li class="control" data-filter=".others">Others</li>
+			</ul>
+			<div class="row course-items-area">
+				<div class="mix col-lg-3 col-md-4 col-sm-6 java">
+					<a href="java-basics.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/java_basics.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Java Basics</h5>
+									<p>Master the core concepts of Java, from syntax to OOP, and build a strong
+										programming foundation.</p>
+									<div class="students">40 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 java">
+					<a href="java-advanced.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/java_advanced.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Java Advanced</h5>
+									<p>Explore advanced Java concepts like collections, multithreading, and latest
+										features to level up your skills.</p>
+									<div class="students">9 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 java">
+					<a href="java-database-connectivity-jdbc.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg"
+								data-setbg="img/courses/java_database_connectivity_jdbc.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Java Database Connectivity (JDBC)</h5>
+									<p>Seamlessly connect Java applications with databases and perform real-time data
+										operations.</p>
+									<div class="students">8 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 others">
+					<a href="maven.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/maven.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Maven</h5>
+									<p>Effortlessly manage Java project builds, dependencies, and lifecycle, ensuring
+										smooth automation and version control.</p>
+									<div class="students">4 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 others">
+					<a href="hibernate.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/hibernate.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Hibernate</h5>
+									<p>Efficiently manage database operations in Java applications with advanced ORM
+										features and streamlined persistence management.</p>
+									<div class="students">26 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 spring">
+					<a href="spring-basics-with-spring-boot.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg"
+								data-setbg="img/courses/spring_basics_with_spring_boot.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Spring Basics with Spring Boot</h5>
+									<p>Kickstart your Spring journey and transition to Spring Boot to build robust,
+										scalable Java applications with ease.</p>
+									<div class="students">21 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 spring">
+					<a href="spring-data-jpa-with-spring-boot.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg"
+								data-setbg="img/courses/spring_data_jpa_with_spring_boot.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Spring Data JPA with Spring Boot</h5>
+									<p>Master data management with Spring Data JPA and seamlessly integrate it into your
+										Spring Boot applications.</p>
+									<div class="students">13 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 spring">
+					<a href="spring-rest-with-spring-boot.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/spring_rest_with_spring_boot.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Spring REST with Spring Boot</h5>
+									<p>Learn the art of writing efficient REST APIs and build powerful solutions with
+										Spring Boot.</p>
+									<div class="students">23 Topics</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 others">
+					<a href="daily-interview-questions.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/daily_interview_questions.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Daily Interview Questions</h5>
+									<p>Boost your interview preparation with daily practice and sharpen your
+										problem-solving skills.</p>
+									<div class="students">165 Shorts</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 others">
+					<a href="daily-3-minute-coding.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/daily_3_minute_coding.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Daily 3 minute coding</h5>
+									<p>Get quick coding tips and improve your skills in just 3 minutes every day.</p>
+									<div class="students">130 Shorts</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="mix col-lg-3 col-md-4 col-sm-6 others">
+					<a href="software-installation.html" style="text-decoration: none; color: inherit;">
+						<div class="course-item">
+							<div class="course-thumb set-bg" data-setbg="img/courses/software_installation.png">
+								<div class="price">Price: FREE</div>
+							</div>
+							<div class="course-info">
+								<div class="course-text">
+									<h5>Software Installation</h5>
+									<p>Master the process of installing essential software and tools with ease.</p>
+									<div class="students">9 Videos</div>
+								</div>
+								<div class="course-author">
+									<div class="ca-pic set-bg" data-setbg="img/authors/abhishek_verma.png"></div>
+									<p><span>Abhishek Verma</span></p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-bottom">
+			<div class="footer-warp">
+				<ul class="footer-menu">
+					<li><a href="https://www.youtube.com/@abhishekvermaa10" target="_blank">YouTube</a></li>
+					<li><a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/abhishekvermaa10" target="_blank">Instagram</a></li>
+					<li><a href="https://x.com/ytabhishekverma" target="_blank">X</a></li>
+					<li><a href="https://github.com/abhishekvermaa10" target="_blank">GitHub</a></li>
+					<li><a href="https://topmate.io/abhishekvermaa10" target="_blank">Topmate</a></li>
+					<li><a href="mailto:scaleupindiayt@gmail.com" target="_blank">E-Mail</a></li>
+				</ul>
+				<div class="copyright">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>
