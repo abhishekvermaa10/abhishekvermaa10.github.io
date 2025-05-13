@@ -1,11 +1,3 @@
-/* =================================
-------------------------------------
-	WebUni - Education Template
-	Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-
 'use strict';
 
 
@@ -132,9 +124,7 @@ $(document).ready(function () {
         { name: 'Spring Basics with Spring Boot', page: 'spring-basics-with-spring-boot.html' },
         { name: 'Spring Data JPA with Spring Boot', page: 'spring-data-jpa-with-spring-boot.html' },
         { name: 'Spring REST with Spring Boot', page: 'spring-rest-with-spring-boot.html' },
-        { name: 'Daily Interview Questions', page: 'daily-interview-questions.html' },
-        { name: 'Daily 3 minute coding', page: 'daily-3-minute-coding.html' },
-        { name: 'Software Installation', page: 'software-installation.html' },
+        { name: 'Spring Microservices with Spring Boot', page: 'spring-microservices-with-spring-boot.html' }
     ];
 
     // Set up autocomplete for course input
