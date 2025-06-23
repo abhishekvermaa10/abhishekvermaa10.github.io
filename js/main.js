@@ -155,3 +155,22 @@ $(document).ready(function () {
 		}
 	});
 });
+
+(function () {
+  const start = new Date(2017, 5, 5); // June 5, 2017 (month is 0-based)
+  const today = new Date();
+  let years = today.getFullYear() - start.getFullYear();
+
+  const notYetAnniversary =
+    today.getMonth() < start.getMonth() ||
+    (today.getMonth() === start.getMonth() && today.getDate() < start.getDate());
+
+  if (notYetAnniversary) {
+    years--;
+  }
+
+  const experienceSpan = document.getElementById("experience-years");
+  if (experienceSpan) {
+    experienceSpan.innerText = years;
+  }
+})();
