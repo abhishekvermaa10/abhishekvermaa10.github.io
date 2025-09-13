@@ -124,7 +124,8 @@ $(document).ready(function () {
         { name: 'Spring Basics with Spring Boot', page: 'spring-basics-with-spring-boot.html' },
         { name: 'Spring Data JPA with Spring Boot', page: 'spring-data-jpa-with-spring-boot.html' },
         { name: 'Spring REST with Spring Boot', page: 'spring-rest-with-spring-boot.html' },
-        { name: 'Spring Microservices with Spring Boot', page: 'spring-microservices-with-spring-boot.html' }
+        { name: 'Spring Microservices with Spring Boot', page: 'spring-microservices-with-spring-boot.html' },
+        { name: 'Emailing By Java', page: 'emailing-by-java.html' }
     ];
 
     // Set up autocomplete for course input
