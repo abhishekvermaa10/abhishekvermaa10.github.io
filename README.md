@@ -1,43 +1,75 @@
-## 👋 Hi, I'm Abhishek Verma
+<h1 align="center">👋 Hi, I'm Abhishek Verma</h1>
 
-Java & Spring Boot Developer · Oracle Certified Java 11 · 8+ years of building backend systems and teaching everything I learn.
+<p align="center">
+    <b>Java & Spring Boot Developer | Oracle Certified Java 11 Developer | 8 Years of experience</b>
+</p>
 
-- 🚀 Ship enterprise-grade Java/Spring projects for a living
-- 🎥 Publish free playlists, shorts, and notes so others can follow the same roadmap
-- 🌐 Explore the new site → [abhishekvermaa10.github.io](https://abhishekvermaa10.github.io) · [About me](https://abhishekvermaa10.github.io/about)
+<p align="center">
+🚀 I build <b>enterprise-grade applications</b> with Java & Spring Boot and love creating <b>practical tutorials</b>.
+</p>
 
----
+<p align="center">
+👉 <a href="https://abhishekvermaa10.github.io" target="_blank">Explore my content</a> | <a href="https://abhishekvermaa10.github.io/about" target="_blank">More about me</a>
+</p>
 
-Here is my **Java Developer Roadmap** in order:
+<hr>
 
-- [Java Basics](https://abhishekvermaa10.github.io/course.html?course=java-basics)
-- [Exception Handling](https://github.com/abhishekvermaa10/Exception-Handling)
-- [Generics](https://github.com/abhishekvermaa10/Generics)
-- [Collection Framework](https://github.com/abhishekvermaa10/Collection-Framework)
-- [Multithreading](https://github.com/abhishekvermaa10/Multithreading)
-- [Concurrency](https://github.com/abhishekvermaa10/Concurrency)
-- [Lambda Expressions](https://github.com/abhishekvermaa10/Lambdas)
-- [Stream API](https://github.com/abhishekvermaa10/Streams)
-- [Optional Class](https://github.com/abhishekvermaa10/Optional-Class)
-- [Date/Time API](https://github.com/abhishekvermaa10/DateTimeAPI)
-- [Serialization](https://github.com/abhishekvermaa10/Serialization)
-- [Java Database Connectivity (JDBC)](https://github.com/abhishekvermaa10/JDBC)
-- [Maven](https://github.com/abhishekvermaa10/Maven)
-- [Hibernate](https://github.com/abhishekvermaa10/Hibernate)
-- [Spring Basics with Spring Boot](https://github.com/abhishekvermaa10/Spring-Basics-with-Spring-Boot)
-- [Spring Data JPA with Spring Boot](https://github.com/abhishekvermaa10/Spring-Data)
-- [Spring REST with Spring Boot](https://github.com/abhishekvermaa10/Spring-REST)
-- [Spring Microservices with Spring Boot](https://abhishekvermaa10.github.io/course.html?course=spring-microservices-with-spring-boot)
-- [Emailing by Java](https://github.com/abhishekvermaa10/Emailing_By_Java)
-- [Spring AI](https://github.com/abhishekvermaa10/Spring-AI)
+<p align="left">
+    Here is my <b>Java Developer Roadmap</b> repositories in a sequential order:
+<ul>
+    <li><a href="https://abhishekvermaa10.github.io/java-basics.html"
+        target="_blank">Java Basics</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Exception-Handling"
+        target="_blank">Exception Handling</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Generics"
+        target="_blank">Generics</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Collection-Framework"
+        target="_blank">Collection Framework</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Multithreading"
+        target="_blank">Multithreading</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Concurrency"
+        target="_blank">Concurrency</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Lambdas"
+        target="_blank">Lambda Expressions</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Streams"
+        target="_blank">Stream API</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Optional-Class"
+        target="_blank">Optional Class</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/DateTimeAPI"
+        target="_blank">Date/Time API</a></li>
+	<li><a href="https://github.com/abhishekvermaa10/Serialization"
+        target="_blank">Serialization</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/JDBC"
+        target="_blank">Java Database Connectivity (JDBC)</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Maven"
+        target="_blank">Maven</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Hibernate"
+        target="_blank">Hibernate</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Spring-Basics-with-Spring-Boot"
+        target="_blank">Spring Basics with Spring Boot</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Spring-Data"
+        target="_blank">Spring Data JPA with Spring Boot</a></li>
+    <li><a href="https://github.com/abhishekvermaa10/Spring-REST"
+        target="_blank">Spring REST with Spring Boot</a></li>
+	<li><a href="https://abhishekvermaa10.github.io/spring-microservices-with-spring-boot.html"
+        target="_blank">Spring Microservices with Spring Boot</a></li>
+	<li><a href="https://github.com/abhishekvermaa10/Emailing_By_Java"
+        target="_blank">Emailing by Java</a></li>
+	<li><a href="https://github.com/abhishekvermaa10/Spring-AI"
+        target="_blank">Spring AI</a></li>
+</ul>
+</p>
 
+<p align="left">
+🎥 Learn these topics from my <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank">YouTube channel</a> through dedicated playlists.
+</p>
 
-📺 Learn these topics from my [YouTube channel](https://www.youtube.com/@abhishekvermaa10) through dedicated playlists.
+<p align="center"><b>🚀 Stay healthy, keep learning, and keep growing!</b></p>
 
----
+<hr>
 
-### 🌐 Connect with me
-<p>
+<h3 align="left">🌐 Connect with me</h3>
+<div align="left">
     <a href="https://abhishekvermaa10.github.io" target="_blank">
   <img src="https://img.shields.io/static/v1?message=Website&logo=internet-explorer&label=&color=6A5ACD&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="Website" />
     </a>
@@ -62,11 +94,12 @@ Here is my **Java Developer Roadmap** in order:
     <a href="mailto:scaleupindiayt@gmail.com">
   <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=EA4335&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="GMail" />
     </a>
-</p>
+</div>
 
+<hr>
 
-### 🛠️ Languages & Frameworks
-<p>
+<h3 align="left">🛠️ Languages & Frameworks</h3>
+<div align="left">
 <a href="https://www.java.com" target="_blank">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" height="70" alt="Java" />
 </a>
@@ -76,13 +109,16 @@ Here is my **Java Developer Roadmap** in order:
 <a href="https://spring.io" target="_blank">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg"  height="70" alt="Spring"  />
 </a>           
-</p>
+</div>
 
-### 🖥️ Software & Tools
-<p>
-<a href="https://www.oracle.com/in/java/technologies/downloads" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="50" alt="Java" />
-</a>
+<hr>
+
+<h3 align="left">🖥️ Software & Tools</h3>
+<div align="left">
+    <a href="https://www.oracle.com/in/java/technologies/downloads" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="50"
+            alt="Java" />
+    </a>
 <a href="https://www.eclipse.org/downloads" target="_blank">
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" height="50" alt="Eclipse" />
 </a>
@@ -107,8 +143,8 @@ Here is my **Java Developer Roadmap** in order:
 <a href="https://mailpit.axllent.org/docs/install" target="_blank">
 <img src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/mailpit.svg" height="50" alt="MailPit" />
 </a>  
-</p>
+</div>
 
----
+<hr>
 
-© Abhishek Verma
+<div align="center">Copyright © Abhishek Verma - All Rights Reserved</div>
