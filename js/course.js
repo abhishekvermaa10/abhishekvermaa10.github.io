@@ -93,9 +93,8 @@
 
   function formatCategory(category) {
     const map = {
-      java: 'Java Core',
-      spring: 'Spring & Cloud',
-      tooling: 'Tooling',
+      java: 'Java',
+      spring: 'Spring',
       others: 'Playlists',
     };
     if (Array.isArray(category)) {
@@ -192,7 +191,7 @@
     const wrap = document.querySelector(selector);
     if (!wrap || !slugs.length) {
       if (wrap) {
-        wrap.innerHTML = '<p>No next steps yet — explore any track above.</p>';
+        wrap.innerHTML = '<p>No next steps yet — explore any existing course.</p>';
       }
       return;
     }

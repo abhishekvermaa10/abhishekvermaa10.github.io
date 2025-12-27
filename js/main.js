@@ -7,9 +7,8 @@
   const gridState = new WeakMap();
 
   const categoryColor = {
-    java: 'Java Core',
-    spring: 'Spring & Cloud',
-    tooling: 'Tooling',
+    java: 'Java',
+    spring: 'Spring',
     others: 'Playlists',
   };
 
