@@ -25,7 +25,7 @@
     card.className = `course-card course-card--${categoryClass}`;
     card.innerHTML = `
       <div class="course-card__media" style="background-image: url('${course.cover}')">
-        <span class="pill pill--ghost">${formatCategory(course.category)}</span>
+        <!-- <span class="pill pill--ghost">${formatCategory(course.category)}</span> -->
       </div>
       <div class="course-card__body">
         <div class="course-card__meta">
@@ -36,7 +36,7 @@
         <p>${course.tagline || course.summary || ''}</p>
         <div class="course-card__footer">
           <span>${course.duration || ''}</span>
-          <span>${course.status || ''}</span>
+          <span>${formatCategory(course.category)}</span>
         </div>
       </div>
     `;

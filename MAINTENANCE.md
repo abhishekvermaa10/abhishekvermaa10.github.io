@@ -26,9 +26,9 @@ This site is now entirely data-driven; most tweaks revolve around the shared dat
 
 ## Adding Static Assets
 - Keep everything under `img/` (subfolders already exist for authors/blog/categories/courses). Avoid reviving the deleted legacy background images unless you also update the layouts to use them.
-- Course cards look best with PNG covers around 1200×900 (landscape) or square crops between 800–1000px. Use transparent or very dark backgrounds so they blend with the site theme.
-- Author/profile images work well at 400×400 PNG. Larger is fine as long as the subject is centered and background is clean.
-- Optimize images before committing (TinyPNG / Squoosh). Stick to PNG for assets that need transparency; JPG is fine for certificates or photos with solid backgrounds.
+- Course covers should be conceptual (no text or logos), dark-themed illustrations exported as WebP at 700×350px (≤200KB), with center-safe composition so they load fast and look consistent in the grid. Use transparent or very dark backgrounds so they blend with the site theme.
+- Author/profile images work well at 400×400 WebP. Larger is fine as long as the subject is centered and background is clean.
+- Stick to WebP for assets that need faster loading.
 
 ## SEO & Crawling
 - `robots.txt` and `sitemap.xml` live at the repo root. Update the sitemap whenever you add/remove a detailed course page.

@@ -7,7 +7,7 @@ const AV_COURSES = [
     level: 'Beginner',
     duration: '≈ 20 hrs',
     topics: '40 topics',
-    cover: 'img/courses/java_basics.png',
+    cover: 'img/courses/java_basics.webp',
     accent: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
     tagline: 'Kick off your Java era with modern syntax, tooling, and ultra-practical practice reps.',
     summary: `I built this starter path for learners who want to become dangerous with Java 21 \n` +
@@ -19,9 +19,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/@abhishekvermaa10/playlists',
     repositoryUrl: 'https://github.com/abhishekvermaa10?tab=repositories',
     featured: false,
-    vibes: ['Java 21',
+    vibes: [
+      'Java 21',
       'Problem solving',
-      'Discipline'],
+      'Discipline'
+    ],
     keyTakeaways: [
       'Map out the entire Java toolchain (JDK, JRE, JVM) and install it with aliases, profiles, and shortcuts.',
       'Understand control flow, data structures, and OOP patterns through real demos instead of textbook theory.',
@@ -79,9 +81,11 @@ const AV_COURSES = [
       { label: 'Learn by watching', url: 'https://www.youtube.com/@abhishekvermaa10/playlists', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10?tab=repositories', type: 'code' },
     ],
-    tags: ['Syntax', 
+    tags: [
+      'Syntax', 
       'OOP', 
-      'Tooling'],
+      'Tooling'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=java-basics',
@@ -94,7 +98,7 @@ const AV_COURSES = [
     level: 'Intermediate',
     duration: '≈ 19 hrs',
     topics: '10 topics',
-    cover: 'img/courses/java_advanced.png',
+    cover: 'img/courses/java_advanced.webp',
     accent: 'linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%)',
     tagline: 'Collections, concurrency, lambdas, and debugging mindsets senior engineers expect.',
     summary: `Move past syntax and learn how to design resilient Java code. We go hands-on with \n` +
@@ -106,9 +110,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Exception-Handling',
     featured: true,
-    vibes: ['Collections', 
+    vibes: [
+      'Collections', 
       'Concurrency', 
-      'Streams'],
+      'Streams'
+    ],
     keyTakeaways: [
       'Master checked vs unchecked exceptions and design defensive APIs.',
       'Pick the right data structure for any load and reason about time + memory.',
@@ -126,7 +132,9 @@ const AV_COURSES = [
       'Date/Time API',
       'Serialization',
     ],
-    prerequisiteCourses: ['java-basics'],
+    prerequisiteCourses: [
+      'java-basics'
+    ],
     optionalPrerequisiteCourses: [],
     nextSteps: [
       'java-database-connectivity-jdbc',
@@ -136,9 +144,11 @@ const AV_COURSES = [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Collection-Framework', type: 'code' },
     ],
-    tags: ['Collections', 
+    tags: [
+      'Collections', 
       'Streams', 
-      'Threads'],
+      'Threads'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=java-advanced',
@@ -151,7 +161,7 @@ const AV_COURSES = [
     level: 'Intermediate',
     duration: '≈ 7 hrs',
     topics: '8 topics',
-    cover: 'img/courses/java_database_connectivity_jdbc.png',
+    cover: 'img/courses/java_database_connectivity_jdbc.webp',
     accent: 'linear-gradient(135deg, #74ebd5 0%, #9face6 100%)',
     tagline: 'Wire Java apps to relational databases with clean, secure patterns.',
     summary: `Learn how JDBC really works so Spring Data and ORM abstractions make sense later. \n` +
@@ -162,9 +172,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfP1FroiBGc7N3-r67VaEp0V',
     repositoryUrl: 'https://github.com/abhishekvermaa10/JDBC',
     featured: false,
-    vibes: ['SQL', 
+    vibes: [
+      'SQL', 
       'Transactions', 
-      'Security'],
+      'Security'
+    ],
     keyTakeaways: [
       'Confidently bootstrap and tear down database connections.',
       'Write safe CRUD operations using PreparedStatement and CallableStatement.',
@@ -180,18 +192,24 @@ const AV_COURSES = [
       'Transactions',
       'Tips to enhance code',
     ],
-    prerequisiteCourses: ['java-basics', 
-      'java-advanced'],
+    prerequisiteCourses: [
+      'java-basics', 
+      'java-advanced'
+    ],
     optionalPrerequisiteCourses: [],
-    nextSteps: ['maven', 
-      'hibernate'],
+    nextSteps: [
+      'maven', 
+      'hibernate'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfP1FroiBGc7N3-r67VaEp0V', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/JDBC', type: 'code' },
     ],
-    tags: ['SQL', 
+    tags: [
+      'SQL', 
       'Transactions', 
-      'Security'],
+      'Security'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=java-database-connectivity-jdbc',
@@ -204,7 +222,7 @@ const AV_COURSES = [
     level: 'Beginner',
     duration: '≈ 3 hrs',
     topics: '4 topics',
-    cover: 'img/courses/maven.png',
+    cover: 'img/courses/maven.webp',
     accent: 'linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%)',
     tagline: 'Automate builds, dependencies, and lifecycle like a pro.',
     summary: `Understand Maven without memorising XML snippets. We cover real project layouts, \n` +
@@ -215,8 +233,10 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMNgiOg0xyg4hVsPcJUh4jE',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Maven',
     featured: false,
-    vibes: ['Automation', 
-      'Builds'],
+    vibes: [
+      'Automation', 
+      'Builds'
+    ],
     keyTakeaways: [
       'Model multi-module projects with confidence.',
       'Use plugins, profiles, and properties to make builds portable.',
@@ -228,17 +248,25 @@ const AV_COURSES = [
       'Webapp with Maven',
       'Installing Apache Maven in Windows',
     ],
-    prerequisiteCourses: ['java-basics', 
-      'java-advanced'],
-    optionalPrerequisiteCourses: ['java-database-connectivity-jdbc'],
-    nextSteps: ['hibernate', 
-      'spring-basics-with-spring-boot'],
+    prerequisiteCourses: [
+      'java-basics', 
+      'java-advanced'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc'
+    ],
+    nextSteps: [
+      'hibernate', 
+      'spring-basics-with-spring-boot'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMNgiOg0xyg4hVsPcJUh4jE', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Maven', type: 'code' },
     ],
-    tags: ['Automation', 
-      'DevOps'],
+    tags: [
+      'Automation', 
+      'DevOps'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=maven',
@@ -251,7 +279,7 @@ const AV_COURSES = [
     level: 'Intermediate',
     duration: '≈ 18 hrs',
     topics: '26 topics',
-    cover: 'img/courses/hibernate.png',
+    cover: 'img/courses/hibernate.webp',
     accent: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
     tagline: 'Map Java objects to relational tables without losing your sanity.',
     summary: `We demystify Hibernate by building multiple entities, relationships, and inheritance \n` +
@@ -261,9 +289,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNYPqMMqNj7DXl41fnTVJuY',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Hibernate',
     featured: false,
-    vibes: ['ORM', 
+    vibes: [
+      'ORM', 
       'SQL', 
-      'Performance'],
+      'Performance'
+    ],
     keyTakeaways: [
       'Model entities and relationships precisely.',
       'Control fetching, caching, and transaction boundaries.',
@@ -297,18 +327,26 @@ const AV_COURSES = [
       'Configuring JPA',
       'CRUD operations using JPA'
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
-      'maven'],
-    optionalPrerequisiteCourses: ['java-database-connectivity-jdbc'],
-    nextSteps: ['spring-basics-with-spring-boot', 
-      'spring-data-jpa-with-spring-boot'],
+      'maven'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc'
+    ],
+    nextSteps: [
+      'spring-basics-with-spring-boot', 
+      'spring-data-jpa-with-spring-boot'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNYPqMMqNj7DXl41fnTVJuY', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Hibernate', type: 'code' },
     ],
-    tags: ['ORM', 
-      'SQL'],
+    tags: [
+      'ORM', 
+      'SQL'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=hibernate',
@@ -321,7 +359,7 @@ const AV_COURSES = [
     level: 'Beginner',
     duration: '≈ 14 hrs',
     topics: '21 topics',
-    cover: 'img/courses/spring_basics_with_spring_boot.png',
+    cover: 'img/courses/spring_basics_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #00b09b 0%, #96c93d 100%)',
     tagline: 'Understand IoC, DI, AOP, and Spring Boot superpowers via real build logs.',
     summary: `This track is the handshake between Java foundations and modern Spring Boot stacks. \n` +
@@ -331,9 +369,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO7BUlQk_di-86igrzgnsGo',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Basics-with-Spring-Boot',
     featured: true,
-    vibes: ['Spring Boot', 
-      'IoC', 
-      'Testing'],
+    vibes: [
+      'Spring Boot', 
+      'IoC',
+      'Testing'
+    ],
     keyTakeaways: [
       'Explain how IoC containers wire beans and manage scopes.',
       'Leverage Boot starters, logging, profiles, YAML, and devtools.',
@@ -362,19 +402,27 @@ const AV_COURSES = [
       'Custom Banner',
       'Capstone Project: Petistaan',
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
-      'maven'],
-    optionalPrerequisiteCourses: ['java-database-connectivity-jdbc', 
-      'hibernate'],
-    nextSteps: ['spring-data-jpa-with-spring-boot', 
-      'spring-rest-with-spring-boot'],
+      'maven'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc', 
+      'hibernate'
+    ],
+    nextSteps: [
+      'spring-data-jpa-with-spring-boot', 
+      'spring-rest-with-spring-boot'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO7BUlQk_di-86igrzgnsGo', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Basics-with-Spring-Boot', type: 'code' },
     ],
-    tags: ['Spring Boot', 
-      'IoC'],
+    tags: [
+      'Spring Boot', 
+      'IoC'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=spring-basics-with-spring-boot',
@@ -387,7 +435,7 @@ const AV_COURSES = [
     level: 'Intermediate',
     duration: '≈ 11 hrs',
     topics: '13 topics',
-    cover: 'img/courses/spring_data_jpa_with_spring_boot.png',
+    cover: 'img/courses/spring_data_jpa_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #0cebeb 0%, #20e3b2 45%, #29ffc6 100%)',
     tagline: 'Master repositories, queries, and transactions the Spring Data way.',
     summary: `Translate your Hibernate knowledge into Spring Data productivity. We design \n` +
@@ -397,8 +445,10 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7_jffHmF_6MooTlH7rO',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Data',
     featured: false,
-    vibes: ['Repositories', 
-      'Transactions'],
+    vibes: [
+      'Repositories', 
+      'Transactions'
+    ],
     keyTakeaways: [
       'Speed-run the CRUD stack with repository abstractions.',
       'Write custom queries using method names, @Query, and Criteria API.',
@@ -419,20 +469,28 @@ const AV_COURSES = [
       'Unit Testing',
       'Capstone Project: Petistaan',
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
       'maven', 
       'hibernate', 
-      'spring-basics-with-spring-boot'],
-    optionalPrerequisiteCourses: ['java-database-connectivity-jdbc'],
-    nextSteps: ['spring-rest-with-spring-boot', 
-      'spring-microservices-with-spring-boot'],
+      'spring-basics-with-spring-boot'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc'
+    ],
+    nextSteps: [
+      'spring-rest-with-spring-boot', 
+      'spring-microservices-with-spring-boot'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7_jffHmF_6MooTlH7rO', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Data', type: 'code' },
     ],
-    tags: ['Data', 
-      'Repositories'],
+    tags: [
+      'Data', 
+      'Repositories'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=spring-data-jpa-with-spring-boot',
@@ -445,7 +503,7 @@ const AV_COURSES = [
     level: 'Intermediate',
     duration: '≈ 20 hrs',
     topics: '24 topics',
-    cover: 'img/courses/spring_rest_with_spring_boot.png',
+    cover: 'img/courses/spring_rest_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #ff9966 0%, #ff5e62 100%)',
     tagline: 'Design real-world REST APIs with validation, docs, and testing baked in.',
     summary: `Start from REST fundamentals and end with production-ready APIs. HATEOAS, \n` +
@@ -455,9 +513,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-REST',
     featured: false,
-    vibes: ['REST', 
-      'Docs', 
-      'Testing'],
+    vibes: [
+      'REST',
+      'Docs',
+      'Testing'
+    ],
     keyTakeaways: [
       'Design stable resource models and HTTP flows.',
       'Handle every type of input and error path.',
@@ -489,21 +549,29 @@ const AV_COURSES = [
       'Unit Testing',
       'Cucumber Testing'
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
       'maven', 
       'hibernate', 
       'spring-basics-with-spring-boot', 
-      'spring-data-jpa-with-spring-boot'],
-    optionalPrerequisiteCourses: ['java-database-connectivity-jdbc'],
-    nextSteps: ['spring-microservices-with-spring-boot', 
-      'spring-ai'],
+      'spring-data-jpa-with-spring-boot'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc'
+    ],
+    nextSteps: [
+      'spring-microservices-with-spring-boot', 
+      'spring-ai'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-REST', type: 'code' },
     ],
-    tags: ['REST', 
-      'APIs'],
+    tags: [
+      'REST', 
+      'APIs'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=spring-rest-with-spring-boot',
@@ -516,9 +584,9 @@ const AV_COURSES = [
     level: 'Advanced',
     duration: '≈ 30 hrs',
     topics: '15 topics',
-    cover: 'img/courses/spring_microservices_with_spring_boot.png',
+    cover: 'img/courses/spring_microservices_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
-    tagline: 'Break monoliths into discoverable, observable Spring Cloud services.',
+    tagline: 'Break monoliths into independent microservices.',
     summary: `We build a microservices playground from a monolith, covering service discovery, \n` +
       `config, API gateways, resilience, tracing, and event-driven messaging.`,
     description: `Every concept is implemented twice: first using Netflix OSS pieces and then \n` +
@@ -526,9 +594,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/@abhishekvermaa10/playlists',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Microservices',
     featured: true,
-    vibes: ['Spring Cloud', 
+    vibes: [
+      'Spring Cloud', 
       'Architecture', 
-      'Ops'],
+      'Ops'
+    ],
     keyTakeaways: [
       'Break a monolith into services with independent databases.',
       'Configure Spring Cloud Config, Eureka/Consul, and API gateways.',
@@ -551,22 +621,30 @@ const AV_COURSES = [
       'Distributed Tracing using OpenTelemetry',
       'Event-Driven Communication using Apache Kafka',
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
       'maven', 
       'hibernate', 
       'spring-basics-with-spring-boot', 
       'spring-data-jpa-with-spring-boot', 
-      'spring-rest-with-spring-boot'],
-    optionalPrerequisiteCourses: ['java-database-connectivity-jdbc', 
-      'emailing-by-java'],
-    nextSteps: ['spring-ai'],
+      'spring-rest-with-spring-boot'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc', 
+      'emailing-by-java'
+    ],
+    nextSteps: [
+      'spring-ai'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/@abhishekvermaa10/playlists', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Microservices', type: 'code' },
     ],
-    tags: ['Spring Cloud', 
-      'Ops'],
+    tags: [
+      'Spring Cloud', 
+      'Ops'
+    ],
     status: 'Upcoming',
     hasDetail: true,
     href: 'course.html?course=spring-microservices-with-spring-boot',
@@ -574,13 +652,15 @@ const AV_COURSES = [
   {
     slug: 'emailing-by-java',
     title: 'Emailing by Java',
-    category: ['java', 
-      'spring'],
+    category: [
+      'java', 
+      'spring'
+    ],
     badge: 'Messaging',
     level: 'Intermediate',
     duration: '≈ 6 hrs',
     topics: '8 topics',
-    cover: 'img/courses/emailing_by_java.png',
+    cover: 'img/courses/emailing_by_java.webp',
     accent: 'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
     tagline: 'Design transactional email flows using Java, Spring Boot, and MailPit.',
     summary: `Learn SMTP basics, Freemarker templates, async sending, and local testing so \n` +
@@ -590,8 +670,10 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNPdTXdns60uAtJRoOtjgOs',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Emailing_By_Java',
     featured: false,
-    vibes: ['Messaging', 
-      'Spring Boot'],
+    vibes: [
+      'Messaging', 
+      'Spring Boot'
+    ],
     keyTakeaways: [
       'Configure SMTP safely in Java and Spring Boot.',
       'Build Freemarker-powered HTML templates with attachments.',
@@ -607,20 +689,26 @@ const AV_COURSES = [
       'Send Emails in the Background with Spring Boot Async',
       'Send Emails locally with MailPit in Spring Boot',
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
       'maven', 
       'spring-basics-with-spring-boot', 
-      'spring-rest-with-spring-boot'],
+      'spring-rest-with-spring-boot'
+    ],
     optionalPrerequisiteCourses: [],
-    nextSteps: ['spring-microservices-with-spring-boot', 
-      'spring-ai'],
+    nextSteps: [
+      'spring-microservices-with-spring-boot', 
+      'spring-ai'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNPdTXdns60uAtJRoOtjgOs', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Emailing_By_Java', type: 'code' },
     ],
-    tags: ['Messaging', 
-      'Spring Boot'],
+    tags: [
+      'Messaging', 
+      'Spring Boot'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=emailing-by-java',
@@ -633,7 +721,7 @@ const AV_COURSES = [
     level: 'Advanced',
     duration: '≈ 8 hrs',
     topics: '11 topics',
-    cover: 'img/courses/spring_ai.png',
+    cover: 'img/courses/spring_ai.webp',
     accent: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     tagline: 'Blend LLMs with Spring Boot using Spring AI, RAG, images, and MCP.',
     summary: `LLMs are only helpful when they are productized. This series walks you through \n` +
@@ -643,9 +731,11 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfOTU8G_KcVIDe1gJYHAB8nT',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-AI',
     featured: true,
-    vibes: ['AI', 
+    vibes: [
+      'AI', 
       'LLMs', 
-      'Spring Boot'],
+      'Spring Boot'
+    ],
     keyTakeaways: [
       'Wire OpenAI/Gemini models using the Spring AI abstraction.',
       'Add advisors, memory, and tool-calling using programmatic + declarative styles.',
@@ -664,19 +754,25 @@ const AV_COURSES = [
       'Creating Model Context Protocol (MCP) Server',
       'Creating Model Context Protocol (MCP) Client'
     ],
-    prerequisiteCourses: ['java-basics', 
+    prerequisiteCourses: [
+      'java-basics', 
       'java-advanced', 
       'maven', 
       'spring-basics-with-spring-boot', 
-      'spring-rest-with-spring-boot'],
+      'spring-rest-with-spring-boot'
+    ],
     optionalPrerequisiteCourses: [],
-    nextSteps: ['spring-microservices-with-spring-boot'],
+    nextSteps: [
+      'spring-microservices-with-spring-boot'
+    ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfOTU8G_KcVIDe1gJYHAB8nT', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-AI', type: 'code' },
     ],
-    tags: ['LLMs', 
-      'Spring Boot'],
+    tags: [
+      'LLMs', 
+      'Spring Boot'
+    ],
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=spring-ai',
@@ -689,7 +785,7 @@ const AV_COURSES = [
     level: 'Snackable',
     duration: '165 shorts',
     topics: '165 shorts',
-    cover: 'img/courses/daily_interview_questions.png',
+    cover: 'img/courses/daily_interview_questions.webp',
     accent: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
     tagline: 'Bite-sized Java + Spring interview drills every single day.',
     summary: 'Micro lessons to keep your whiteboard brain warm.',
@@ -697,14 +793,19 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNd4lw3-DNYqyU07FShIwTE',
     repositoryUrl: '',
     featured: false,
-    vibes: ['Interviews', 'Shorts'],
+    vibes: [
+      'Interviews', 
+      'Shorts'
+    ],
     keyTakeaways: [],
     tableOfContent: [],
     prerequisiteCourses: [],
     optionalPrerequisiteCourses: [],
     nextSteps: [],
     resources: [],
-    tags: ['Shorts'],
+    tags: [
+      'Shorts'
+    ],
     status: 'Always free',
     hasDetail: false,
     href: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNd4lw3-DNYqyU07FShIwTE',
@@ -717,7 +818,7 @@ const AV_COURSES = [
     level: 'Snackable',
     duration: '130+ shorts',
     topics: '130+ shorts',
-    cover: 'img/courses/daily_3_minute_coding.png',
+    cover: 'img/courses/daily_3_minute_coding.webp',
     accent: 'linear-gradient(135deg, #c471f5 0%, #fa71cd 100%)',
     tagline: '3-minute Java/Spring/code hygiene hacks for Gen Z attention spans.',
     summary: 'Tiny clips that you can binge between stand-ups to keep skills sharp.',
@@ -725,14 +826,19 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMrTe3bSOTz6QCTpNypsA3O',
     repositoryUrl: '',
     featured: false,
-    vibes: ['Habits'],
+    vibes: [
+      'Habits'
+    ],
     keyTakeaways: [],
     tableOfContent: [],
     prerequisiteCourses: [],
     optionalPrerequisiteCourses: [],
     nextSteps: [],
     resources: [],
-    tags: ['Shorts'],
+    tags: [
+      'Shorts'
+
+    ],
     status: 'Always free',
     hasDetail: false,
     href: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMrTe3bSOTz6QCTpNypsA3O',
@@ -745,7 +851,7 @@ const AV_COURSES = [
     level: 'Beginner',
     duration: '9 videos',
     topics: '9 setup guides',
-    cover: 'img/courses/software_installation.png',
+    cover: 'img/courses/software_installation.webp',
     accent: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
     tagline: 'Install every dev tool without the guesswork.',
     summary: 'From IDEs to databases, these walkthroughs save hours of trial-and-error.',
@@ -753,14 +859,18 @@ const AV_COURSES = [
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPFL_TT7pl4jc33mduIPZ0V',
     repositoryUrl: '',
     featured: false,
-    vibes: ['Setup'],
+    vibes: [
+      'Setup'
+    ],
     keyTakeaways: [],
     tableOfContent: [],
     prerequisiteCourses: [],
     optionalPrerequisiteCourses: [],
     nextSteps: [],
     resources: [],
-    tags: ['Setup'],
+    tags: [
+      'Setup'
+    ],
     status: 'Always free',
     hasDetail: false,
     href: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPFL_TT7pl4jc33mduIPZ0V',
