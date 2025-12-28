@@ -567,6 +567,7 @@ const AV_COURSES = [
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-REST', type: 'code' },
+      { label: 'Apply FREE Internship', url: 'https://topmate.io/abhishekvermaa10/1583789', type: 'internship' },
     ],
     tags: [
       'REST', 
