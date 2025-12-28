@@ -10,14 +10,12 @@ const AV_COURSES = [
     cover: 'img/courses/java_basics.webp',
     accent: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
     tagline: 'Kick off your Java era with modern syntax, tooling, and ultra-practical practice reps.',
-    summary: `I built this starter path for learners who want to become dangerous with Java 21 \n` +
-      `without drowning in buzzwords. Every clip ships with context, IDE shortcuts, and demo code so you \n` +
-      `can follow along even if you just opened your very first terminal.`,
     description: `This track keeps things honest: no overnight "pro" promises — just disciplined reps on \n` +
       `syntax, memory model, object design, and debugging habits. Work through each topic, practice the \n` +
       `assignments, keep notes, and you will have a rock-solid Java foundation for any backend stack.`,
     playlistUrl: 'https://www.youtube.com/@abhishekvermaa10/playlists',
     repositoryUrl: 'https://github.com/abhishekvermaa10?tab=repositories',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Java 21',
@@ -101,14 +99,12 @@ const AV_COURSES = [
     cover: 'img/courses/java_advanced.webp',
     accent: 'linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%)',
     tagline: 'Collections, concurrency, lambdas, and debugging mindsets senior engineers expect.',
-    summary: `Move past syntax and learn how to design resilient Java code. We go hands-on with \n` +
+    description: `Move past syntax and learn how to design resilient Java code. We go hands-on with \n` +
       `collections, generics, multi-threading, modern functional APIs, and the patterns interviewers love \n` +
       `asking about.`,
-    description: `Every lesson pairs a real-world scenario with code walkthroughs and lab assignments. \n` +
-      `You will finish understanding why certain APIs exist, how to benchmark them, and how to make \n` +
-      `tradeoffs when building enterprise Java services.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfP5xBfI-41j3gNZ6GAsrxD-',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Exception-Handling',
+    internshipUrl: '',
     featured: true,
     vibes: [
       'Collections', 
@@ -164,13 +160,11 @@ const AV_COURSES = [
     cover: 'img/courses/java_database_connectivity_jdbc.webp',
     accent: 'linear-gradient(135deg, #74ebd5 0%, #9face6 100%)',
     tagline: 'Wire Java apps to relational databases with clean, secure patterns.',
-    summary: `Learn how JDBC really works so Spring Data and ORM abstractions make sense later. \n` +
+    description: `Learn how JDBC really works so ORM, JPA, Hibernate, Spring Data abstractions make sense later. \n` +
       `From statements to transactions, you will build CRUD flows the right way.`,
-    description: `We focus on production-minded habits: connection pooling, SQL injection defence, \n` +
-      `batching, transaction boundaries, and logging. Every exercise moves from naive code to \n` +
-      `battle-tested patterns so you can feel the difference.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfP1FroiBGc7N3-r67VaEp0V',
     repositoryUrl: 'https://github.com/abhishekvermaa10/JDBC',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'SQL', 
@@ -225,13 +219,11 @@ const AV_COURSES = [
     cover: 'img/courses/maven.webp',
     accent: 'linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%)',
     tagline: 'Automate builds, dependencies, and lifecycle like a pro.',
-    summary: `Understand Maven without memorising XML snippets. We cover real project layouts, \n` +
+    description: `Understand Maven without memorising XML snippets. We cover real project layouts, \n` +
       `plugins, profiles, and the tricks teams use to keep builds fast and reliable.`,
-    description: `You will scaffold Java + web projects, wire up third-party dependencies safely, and \n` +
-      `own the lifecycle phases. The playlist also shows how IDEs hook into Maven so you stop \n` +
-      `fighting your tooling.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMNgiOg0xyg4hVsPcJUh4jE',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Maven',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Automation', 
@@ -282,12 +274,11 @@ const AV_COURSES = [
     cover: 'img/courses/hibernate.webp',
     accent: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
     tagline: 'Map Java objects to relational tables without losing your sanity.',
-    summary: `We demystify Hibernate by building multiple entities, relationships, and inheritance \n` +
+    description: `Demystify Hibernate by building multiple entities, relationships, and inheritance \n` +
       `strategies from scratch. You will see how Hibernate behaves under the hood so you can tune it.`,
-    description: `From basic CRUD to complex HQL queries, caching, and performance tuning, \n` +
-      `the course walks through everything you need before entering Spring Data JPA land.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNYPqMMqNj7DXl41fnTVJuY',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Hibernate',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'ORM', 
@@ -362,12 +353,11 @@ const AV_COURSES = [
     cover: 'img/courses/spring_basics_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #00b09b 0%, #96c93d 100%)',
     tagline: 'Understand IoC, DI, AOP, and Spring Boot superpowers via real build logs.',
-    summary: `This track is the handshake between Java foundations and modern Spring Boot stacks. \n` +
+    description: `This track is the handshake between Java foundations and modern Spring Boot stacks. \n` +
       `You will see how annotations translate to runtime behaviour and how Boot accelerates shipping.`,
-    description: `We go layer by layer — IoC container, dependency injection styles, stereotypes, \n` +
-      `configuration, logging, profiles, AOP, and testing. Cap it off with the Petistaan capstone.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO7BUlQk_di-86igrzgnsGo',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Basics-with-Spring-Boot',
+    internshipUrl: '',
     featured: true,
     vibes: [
       'Spring Boot', 
@@ -438,12 +428,11 @@ const AV_COURSES = [
     cover: 'img/courses/spring_data_jpa_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #0cebeb 0%, #20e3b2 45%, #29ffc6 100%)',
     tagline: 'Master repositories, queries, and transactions the Spring Data way.',
-    summary: `Translate your Hibernate knowledge into Spring Data productivity. We design \n` +
+    description: `Translate your Hibernate knowledge into Spring Data productivity. We design \n` +
       `real repositories, pagination, projections, and transaction boundaries.`,
-    description: `Expect to work with derived queries, custom JPQL/native queries, specs, multi-database \n` +
-      `setups, and test slices. Everything ends with the Petistaan case study.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7_jffHmF_6MooTlH7rO',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Data',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Repositories', 
@@ -506,12 +495,11 @@ const AV_COURSES = [
     cover: 'img/courses/spring_rest_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #ff9966 0%, #ff5e62 100%)',
     tagline: 'Design real-world REST APIs with validation, docs, and testing baked in.',
-    summary: `Start from REST fundamentals and end with production-ready APIs. HATEOAS, \n` +
+    description: `Start from REST fundamentals and end with production-ready APIs. HATEOAS, \n` +
       `internationalisation, versioning, security basics, docs, and testing are all inside.`,
-    description: `Each module pairs HTTP theory with Spring Boot implementation so you know WHY a \n` +
-      `pattern exists. Expect to build multiple controllers, handle inputs, and deliver confident APIs.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-REST',
+    internshipUrl: 'https://topmate.io/abhishekvermaa10/1583789',
     featured: false,
     vibes: [
       'REST',
@@ -567,7 +555,7 @@ const AV_COURSES = [
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-REST', type: 'code' },
-      { label: 'Apply FREE Internship', url: 'https://topmate.io/abhishekvermaa10/1583789', type: 'internship' },
+      { label: 'Apply Free Internship', url: 'https://topmate.io/abhishekvermaa10/1583789', type: 'internship' },
     ],
     tags: [
       'REST', 
@@ -588,12 +576,11 @@ const AV_COURSES = [
     cover: 'img/courses/spring_microservices_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
     tagline: 'Break monoliths into independent microservices.',
-    summary: `We build a microservices playground from a monolith, covering service discovery, \n` +
-      `config, API gateways, resilience, tracing, and event-driven messaging.`,
-    description: `Every concept is implemented twice: first using Netflix OSS pieces and then \n` +
-      `with HashiCorp/modern approaches so you understand options.`,
+    description: `Build a microservices playground from a monolith, covering centralized configuration, \n` +
+      `service discovery, API gateways, resilience, tracing, and event-driven messaging.`,
     playlistUrl: 'https://www.youtube.com/@abhishekvermaa10/playlists',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Microservices',
+    internshipUrl: '',
     featured: true,
     vibes: [
       'Spring Cloud', 
@@ -664,12 +651,11 @@ const AV_COURSES = [
     cover: 'img/courses/emailing_by_java.webp',
     accent: 'linear-gradient(135deg, #ee9ca7 0%, #ffdde1 100%)',
     tagline: 'Design transactional email flows using Java, Spring Boot, and MailPit.',
-    summary: `Learn SMTP basics, Freemarker templates, async sending, and local testing so \n` +
+    description: `Learn SMTP basics, Freemarker templates, async sending, and local testing so \n` +
       `you can ship polished email features without using SaaS magic.`,
-    description: `We start with bare JavaMail APIs, then move to Spring Boot abstraction, include \n` +
-      `file uploads, background sending, and local testing using MailPit.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNPdTXdns60uAtJRoOtjgOs',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Emailing_By_Java',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Messaging', 
@@ -725,12 +711,11 @@ const AV_COURSES = [
     cover: 'img/courses/spring_ai.webp',
     accent: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
     tagline: 'Blend LLMs with Spring Boot using Spring AI, RAG, images, and MCP.',
-    summary: `LLMs are only helpful when they are productized. This series walks you through \n` +
+    description: `LLMs are only helpful when they are productized. This series walks you through \n` +
       `prompting, advisors, memory, tools, RAG, multimodal workflows, and Model Context Protocol.`,
-    description: `Every video ships a runnable project plus GitHub code, so you can plug AI into \n` +
-      `existing Spring services quickly and safely.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfOTU8G_KcVIDe1gJYHAB8nT',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-AI',
+    internshipUrl: '',
     featured: true,
     vibes: [
       'AI', 
@@ -789,10 +774,10 @@ const AV_COURSES = [
     cover: 'img/courses/daily_interview_questions.webp',
     accent: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
     tagline: 'Bite-sized Java + Spring interview drills every single day.',
-    summary: 'Micro lessons to keep your whiteboard brain warm.',
-    description: 'Quick, focused videos that fit into your daily routine and boost your confidence.',
+    description: 'Micro lessons to keep your whiteboard brain warm.',
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNd4lw3-DNYqyU07FShIwTE',
     repositoryUrl: '',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Interviews', 
@@ -822,10 +807,10 @@ const AV_COURSES = [
     cover: 'img/courses/daily_3_minute_coding.webp',
     accent: 'linear-gradient(135deg, #c471f5 0%, #fa71cd 100%)',
     tagline: '3-minute Java/Spring/code hygiene hacks for Gen Z attention spans.',
-    summary: 'Tiny clips that you can binge between stand-ups to keep skills sharp.',
-    description: 'Short, engaging videos that fit into your busy schedule and enhance your coding prowess.',
+    description: 'Tiny clips that you can binge between stand-ups to keep skills sharp.',
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMrTe3bSOTz6QCTpNypsA3O',
     repositoryUrl: '',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Habits'
@@ -855,10 +840,10 @@ const AV_COURSES = [
     cover: 'img/courses/software_installation.webp',
     accent: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
     tagline: 'Install every dev tool without the guesswork.',
-    summary: 'From IDEs to databases, these walkthroughs save hours of trial-and-error.',
     description: 'Step-by-step video guides to get your development environment up and running smoothly.',
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPFL_TT7pl4jc33mduIPZ0V',
     repositoryUrl: '',
+    internshipUrl: '',
     featured: false,
     vibes: [
       'Setup'

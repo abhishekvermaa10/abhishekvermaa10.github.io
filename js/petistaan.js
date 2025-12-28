@@ -72,6 +72,7 @@
         }
       });
     }
+    wireDropdowns();
     setupInputConstraints();
     fetchOwners();
     fetchStats();
@@ -171,7 +172,9 @@
   }
 
   function wireCreateForm() {
-    petCategorySelect?.addEventListener('change', togglePetFields);
+    const petCategoryInput =
+    createForm?.querySelector('input[name="petCategory"]');
+    petCategoryInput?.addEventListener('change', togglePetFields);
     togglePetFields();
 
     createForm?.addEventListener('submit', (event) => {
@@ -188,8 +191,8 @@
         createMessage.textContent = '';
         return;
       }
-      createMessage.textContent = 'Looks great! Time to wire these fields to your Spring Boot controllers.';
-      showInfoDialog('Backend required', 'This create form is ready. Learn how to persist the data inside the Petistaan project by following Abhishek\'s Java & Spring Boot roadmap.');
+      createMessage.textContent = 'Amazing! Time to wire these fields to your backend application.';
+      showInfoDialog('Addition needs persistance', 'You tried adding new owner and pet information. Learn how to persist the data inside the Petistaan project by following Abhishek\'s Java & Spring Boot roadmap.');
       createForm.reset();
       togglePetFields();
       clearAllFieldErrors();
@@ -224,14 +227,14 @@
         return;
       }
       closeModal(ownerModal);
-      showInfoDialog('Ship this via Spring Boot', `You tried renaming ${currentOwner.petDTO?.name || 'the pet'} to ${petName}. Learn how to persist the data inside the Petistaan project by following Abhishek's Java & Spring Boot roadmap.`);
+      showInfoDialog('Updation needs persistance', `You tried renaming ${currentOwner.petDTO?.name || 'the pet'} to ${petName}. Learn how to persist the data inside the Petistaan project by following Abhishek's Java & Spring Boot roadmap.`);
       updateForm.reset();
     });
 
     deleteBtn?.addEventListener('click', () => {
       if (!currentOwner) return;
       closeModal(ownerModal);
-      showInfoDialog('Delete needs persistence', `You tried removing owner #${currentOwner.id}. Learn how to persist the data inside the Petistaan project by following Abhishek's Java & Spring Boot roadmap.`);
+      showInfoDialog('Deletion needs persistence', `You tried removing owner #${currentOwner.id}. Learn how to persist the data inside the Petistaan project by following Abhishek's Java & Spring Boot roadmap.`);
     });
 
     statsTrigger?.addEventListener('click', () => {
@@ -245,7 +248,8 @@
   }
 
   function togglePetFields() {
-    const category = petCategorySelect?.value?.toLowerCase();
+    const categoryInput = createForm?.querySelector('input[name="petCategory"]');
+    const category = categoryInput?.value?.toLowerCase();
     if (!dobField || !birthPlaceField) return;
     if (category === 'wild') {
       dobField.classList.add('is-hidden');
@@ -568,6 +572,39 @@
     if (infoBody) infoBody.textContent = message;
     if (infoCta) infoCta.setAttribute('href', 'courses.html');
     openModal(infoModal);
+  }
+
+  function wireDropdowns() {
+    const dropdowns = app.querySelectorAll('[data-dropdown]');
+
+    dropdowns.forEach((dropdown) => {
+      const textInput = dropdown.querySelector('input[type="text"]');
+      const valueInput = dropdown.querySelector('input[type="hidden"]');
+      const list = dropdown.querySelector('.search-suggestions');
+      const fieldName = dropdown.dataset.name;
+
+      if (!textInput || !valueInput || !list || !fieldName) return;
+
+      textInput.addEventListener('click', () => {
+        list.classList.toggle('is-visible');
+      });
+
+      list.querySelectorAll('button').forEach((button) => {
+        button.addEventListener('click', () => {
+          textInput.value = button.textContent;
+          valueInput.value = button.dataset.value;
+          valueInput.dispatchEvent(new Event('change', { bubbles: true }));
+          list.classList.remove('is-visible');
+          clearFieldError(fieldName);
+        });
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!dropdown.contains(event.target)) {
+          list.classList.remove('is-visible');
+        }
+      });
+    });
   }
 
   init();

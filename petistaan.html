@@ -54,7 +54,7 @@
     <section class="hero petistaan-hero">
       <div class="container hero__layout">
         <div class="hero__content">
-          <h1>Petistaan</h1>
+          <h1>Petistaan 🦜</h1>
           <p>Petistaan is a world where owners and pets thrive together. This is the real-world project you’ve always wanted to build from
             scratch. Used throughout my courses, it grows layer by layer, taking you beyond theory and into building a
             production-ready system like a professional. What you see here is just the UI. To master the backend, dive into the
@@ -78,11 +78,15 @@
               </label>
               <label>
                 <span>Per page</span>
-                <select data-page-size>
-                  <option value="1">1</option>
-                  <option value="3">3</option>
-                  <option value="5" selected>5</option>
-                </select>
+                <div class="dropdown" data-dropdown data-name="pageSize">
+                  <input type="text" placeholder="Per page" readonly value="5">
+                  <input type="hidden" data-page-size value="5">
+                  <ul class="search-suggestions">
+                    <li><button type="button" data-value="1">1</button></li>
+                    <li><button type="button" data-value="3">3</button></li>
+                    <li><button type="button" data-value="5">5</button></li>
+                  </ul>
+                </div>
               </label>
             </div>
           </div>
@@ -134,10 +138,14 @@
               </label>
               <label class="form-field" data-field="gender">
                 <span>Gender <sup>*</sup></span>
-                <select name="gender" required>
-                  <option value="M">Male (M)</option>
-                  <option value="F">Female (F)</option>
-                </select>
+                <div class="dropdown" data-dropdown data-name="gender">
+                  <input type="text" placeholder="Select gender" readonly>
+                  <input type="hidden" name="gender">
+                  <ul class="search-suggestions">
+                    <li><button type="button" data-value="M">Male</button></li>
+                    <li><button type="button" data-value="F">Female</button></li>
+                  </ul>
+                </div>
               </label>
               <label class="form-field" data-field="city">
                 <span>City <sup>*</sup></span>
@@ -161,27 +169,39 @@
               </label>
               <label class="form-field" data-field="petGender">
                 <span>Pet gender <sup>*</sup></span>
-                <select name="petGender" required>
-                  <option value="M">Male (M)</option>
-                  <option value="F">Female (F)</option>
-                </select>
+                <div class="dropdown" data-dropdown data-name="petGender">
+                  <input type="text" placeholder="Select pet gender" readonly>
+                  <input type="hidden" name="petGender">
+                  <ul class="search-suggestions">
+                    <li><button type="button" data-value="M">Male</button></li>
+                    <li><button type="button" data-value="F">Female</button></li>
+                  </ul>
+                </div>
               </label>
               <label class="form-field" data-field="petCategory">
                 <span>Pet category <sup>*</sup></span>
-                <select name="petCategory" data-pet-category required>
-                  <option value="Domestic" selected>Domestic</option>
-                  <option value="Wild">Wild</option>
-                </select>
+                <div class="dropdown" data-dropdown data-name="petCategory">
+                  <input type="text" placeholder="Select pet category" readonly>
+                  <input type="hidden" name="petCategory">
+                  <ul class="search-suggestions">
+                    <li><button type="button" data-value="Domestic">Domestic</button></li>
+                    <li><button type="button" data-value="Wild">Wild</button></li>
+                  </ul>
+                </div>
               </label>
               <label class="form-field" data-field="petType">
                 <span>Pet type <sup>*</sup></span>
-                <select name="petType" required>
-                  <option value="BIRD">Bird</option>
-                  <option value="CAT">Cat</option>
-                  <option value="DOG">Dog</option>
-                  <option value="FISH">Fish</option>
-                  <option value="RABBIT">Rabbit</option>
-                </select>
+                <div class="dropdown" data-dropdown data-name="petType">
+                  <input type="text" placeholder="Select pet type" readonly>
+                  <input type="hidden" name="petType">
+                  <ul class="search-suggestions">
+                    <li><button type="button" data-value="BIRD">Bird</button></li>
+                    <li><button type="button" data-value="CAT">Cat</button></li>
+                    <li><button type="button" data-value="DOG">Dog</button></li>
+                    <li><button type="button" data-value="FISH">Fish</button></li>
+                    <li><button type="button" data-value="RABBIT">Rabbit</button></li>
+                  </ul>
+                </div>
               </label>
               <label class="form-field" data-field="petDob" data-dob-field>
                 <span>Pet date of birth <sup>*</sup></span>
@@ -198,8 +218,7 @@
               <p class="form-success" data-create-message></p>
             </div>
             <button class="btn" type="submit">Save owner and pet</button>
-            <p class="panel__hint">You will be nudged to build the backend the moment you submit. That nudge is the
-              whole point.</p>
+            <p class="panel__hint">You will be nudged to build the backend the moment you submit. This UI just keeps the dream alive.</p>
           </form>
         </article>
       </div>
@@ -247,7 +266,7 @@
         <button class="btn" type="submit">Update pet name</button>
       </form>
       <button class="btn btn--danger modal__danger" type="button" data-delete-owner>Delete owner and pet</button>
-      <p class="modal__hint">Real updates happen once you craft the Spring Boot backend. This UI just keeps the dream
+      <p class="modal__hint">You will be nudged to build the backend the moment you submit. This UI just keeps the dream
         alive.</p>
     </div>
   </div>

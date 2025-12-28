@@ -24,11 +24,11 @@
 
   document.title = `${course.title} · Abhishek Verma`;
   setMeta('meta[property="og:title"]', `${course.title} · Abhishek Verma`);
-  setMeta('meta[property="og:description"]', course.description || course.summary || '');
+  setMeta('meta[property="og:description"]', course.description || '');
   setMeta('meta[property="og:url"]', courseUrl);
   setMeta('meta[property="og:image"]', `${baseUrl}/${course.cover}`);
   setMeta('meta[name="twitter:title"]', `${course.title} · Abhishek Verma`);
-  setMeta('meta[name="twitter:description"]', course.description || course.summary || '');
+  setMeta('meta[name="twitter:description"]', course.description || '');
   setMeta('meta[name="twitter:image"]', `${baseUrl}/${course.cover}`);
   const canonical = document.querySelector('link[rel="canonical"]');
   if (canonical) {
@@ -56,8 +56,8 @@
 
   setText('[data-course-category]', formatCategory(course.category));
   setText('[data-course-title]', course.title);
-  setText('[data-course-tagline]', course.tagline || course.summary || '');
-  setText('[data-course-description]', course.description || course.summary || '');
+  setText('[data-course-tagline]', course.tagline || '');
+  setText('[data-course-description]', course.description || '');
 
   setText('[data-course-topics]', course.topics || '');
   setText('[data-course-duration]', course.duration || '');
@@ -81,6 +81,16 @@
       codeBtn.target = '_blank';
     } else {
       codeBtn.remove();
+    }
+  }
+
+  const internshipBtn = document.querySelector('[data-course-internship]');
+  if (internshipBtn) {
+    if (course.internshipUrl) {
+      internshipBtn.href = course.internshipUrl;
+      internshipBtn.target = '_blank';
+    } else {
+      internshipBtn.remove();
     }
   }
 
@@ -137,7 +147,7 @@
       link.href = resource.url;
       link.target = '_blank';
       link.rel = 'noopener';
-      link.className = 'resource-link';
+      link.className = 'chip-link';
       link.textContent = resource.label;
       wrap.appendChild(link);
     });
@@ -205,7 +215,7 @@
         card.className = 'course-next-card';
         card.innerHTML = `
           <h4>${courseItem.title}</h4>
-          <p>${courseItem.tagline || courseItem.summary || ''}</p>
+          <p>${courseItem.tagline || ''}</p>
           <a href="course.html?course=${courseItem.slug}" class="btn btn--ghost">View drop</a>
         `;
         wrap.appendChild(card);

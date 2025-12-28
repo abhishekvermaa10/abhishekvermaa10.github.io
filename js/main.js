@@ -33,7 +33,7 @@
           <span>${course.topics || ''}</span>
         </div>
         <h3>${course.title}</h3>
-        <p>${course.tagline || course.summary || ''}</p>
+        <p>${course.tagline || ''}</p>
         <div class="course-card__footer">
           <span>${course.duration || ''}</span>
           <span>${formatCategory(course.category)}</span>
@@ -160,7 +160,7 @@
         const haystack = [
           course.title,
           course.tagline,
-          course.summary,
+          course.description,
           ...(course.tags || []),
         ]
           .filter(Boolean)
