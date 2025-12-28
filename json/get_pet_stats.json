@@ -1,0 +1,55 @@
+{
+    "category": {
+        "WILD": {
+            "gender": {
+                "M": {
+                    "total": 21,
+                    "type": {
+                        "BIRD": 3,
+                        "CAT": 7,
+                        "DOG": 3,
+                        "FISH": 3,
+                        "RABBIT": 5
+                    }
+                },
+                "F": {
+                    "total": 15,
+                    "type": {
+                        "BIRD": 6,
+                        "CAT": 2,
+                        "DOG": 1,
+                        "FISH": 2,
+                        "RABBIT": 4
+                    }
+                }
+            },
+            "total": 36
+        },
+        "DOMESTIC": {
+            "gender": {
+                "M": {
+                    "total": 22,
+                    "type": {
+                        "BIRD": 4,
+                        "CAT": 4,
+                        "DOG": 5,
+                        "FISH": 4,
+                        "RABBIT": 5
+                    }
+                },
+                "F": {
+                    "total": 14,
+                    "type": {
+                        "BIRD": 3,
+                        "CAT": 3,
+                        "DOG": 3,
+                        "FISH": 2,
+                        "RABBIT": 3
+                    }
+                }
+            },
+            "total": 36
+        }
+    },
+    "total": 72
+}

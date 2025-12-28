@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Petistaan UI demo from Abhishek Verma's backend course. Play with the mock owners/pets console and learn how to build the Java + Spring Boot APIs.">
+  <meta name="keywords" content="Petistaan, Java backend project, Spring Boot course, Abhishek Verma">
+  <meta name="author" content="Abhishek Verma">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abhishekvermaa10.github.io/petistaan.html">
+  <meta property="og:title" content="Petistaan · Abhishek Verma">
+  <meta property="og:description" content="UI demo for the Petistaan backend project. Paginated owners, pet stats, and mock CRUD flows powered by static JSON.">
+  <meta property="og:image" content="https://abhishekvermaa10.github.io/img/authors/abhishek_verma.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Petistaan · Abhishek Verma">
+  <meta name="twitter:description" content="UI demo for the Petistaan backend project. Paginated owners, pet stats, and mock CRUD flows powered by static JSON.">
+  <meta name="twitter:image" content="https://abhishekvermaa10.github.io/img/authors/abhishek_verma.png">
+  <title>Petistaan · Abhishek Verma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <link rel="canonical" href="https://abhishekvermaa10.github.io/petistaan.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span>AV</span>
+        <small>JAVA STUDIO</small>
+      </a>
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="course.html?course=spring-ai">Latest Drop</a>
+        <a href="petistaan.html" aria-current="page">Petistaan</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="courses.html">Roadmap</a>
+        <a class="btn" href="https://www.youtube.com/@abhishekvermaa10" target="_blank" rel="noopener">Join Community</a>
+      </div>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <main data-petistaan-app>
+    <section class="hero petistaan-hero">
+      <div class="container hero__layout">
+        <div class="hero__content">
+          <h1>Petistaan</h1>
+          <p>Petistaan is a world where owners and pets thrive together. This is the real-world project you’ve always wanted to build from
+            scratch. Used throughout my courses, it grows layer by layer, taking you beyond theory and into building a
+            production-ready system like a professional. What you see here is just the UI. To master the backend, dive into the
+            Java and Spring courses with Abhishek.</p>
+          </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container petistaan-grid">
+        <article class="panel panel--table">
+          <div class="panel__header">
+            <div>
+              <h2>Owners &amp; pets</h2>
+              <p class="panel__hint">Click any row to view full details of the owner and pet.</p>
+            </div>
+            <div class="panel__controls">
+              <label>
+                <span>Search</span>
+                <input type="search" placeholder="Search owner or pet" data-owner-search>
+              </label>
+              <label>
+                <span>Per page</span>
+                <select data-page-size>
+                  <option value="1">1</option>
+                  <option value="3">3</option>
+                  <option value="5" selected>5</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="panel__body">
+            <div class="table-scroll">
+              <table class="pet-table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Owner</th>
+                    <th>Pet</th>
+                  </tr>
+                </thead>
+                <tbody data-owner-rows></tbody>
+              </table>
+            </div>
+            <div class="empty-state is-hidden" data-owner-empty>Nothing matches this search yet.</div>
+          </div>
+          <div class="panel__footer">
+            <div>
+              <strong data-total-records>0 owners</strong>
+              <p class="panel__hint">Showing mock data only. Backend call needed for real-time updates.</p>
+            </div>
+            <div class="pagination">
+              <button type="button" class="btn btn--ghost btn--sm" data-page-prev>Prev</button>
+              <span data-pagination-label>Page 1</span>
+              <button type="button" class="btn btn--ghost btn--sm" data-page-next>Next</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel panel--form">
+          <div class="panel__header">
+            <div>
+              <h2>Create owner &amp; pet</h2>
+              <p class="panel__hint">All fields are mandatory. Domestic pets require DOB, wild pets require place of
+                birth.</p>
+            </div>
+          </div>
+          <form class="pet-form" data-create-form novalidate>
+            <div class="form-grid">
+              <label class="form-field" data-field="firstName">
+                <span>First name <sup>*</sup></span>
+                <input type="text" name="firstName" placeholder="Abhishek" required>
+              </label>
+              <label class="form-field" data-field="lastName">
+                <span>Last name <sup>*</sup></span>
+                <input type="text" name="lastName" placeholder="Verma" required>
+              </label>
+              <label class="form-field" data-field="gender">
+                <span>Gender <sup>*</sup></span>
+                <select name="gender" required>
+                  <option value="M">Male (M)</option>
+                  <option value="F">Female (F)</option>
+                </select>
+              </label>
+              <label class="form-field" data-field="city">
+                <span>City <sup>*</sup></span>
+                <input type="text" name="city" placeholder="New Chandigarh" required>
+              </label>
+              <label class="form-field" data-field="state">
+                <span>State <sup>*</sup></span>
+                <input type="text" name="state" placeholder="Punjab" required>
+              </label>
+              <label class="form-field" data-field="mobileNumber">
+                <span>Mobile number <sup>*</sup></span>
+                <input type="tel" name="mobileNumber" placeholder="9009009000" inputmode="numeric" maxlength="10" pattern="[0-9]{10}" required>
+              </label>
+              <label class="form-field" data-field="emailId">
+                <span>Email ID <sup>*</sup></span>
+                <input type="email" name="emailId" placeholder="abhishekvermaa10@scaleupindia.com" required>
+              </label>
+              <label class="form-field" data-field="petName">
+                <span>Pet name <sup>*</sup></span>
+                <input type="text" name="petName" placeholder="Mitthu" required>
+              </label>
+              <label class="form-field" data-field="petGender">
+                <span>Pet gender <sup>*</sup></span>
+                <select name="petGender" required>
+                  <option value="M">Male (M)</option>
+                  <option value="F">Female (F)</option>
+                </select>
+              </label>
+              <label class="form-field" data-field="petCategory">
+                <span>Pet category <sup>*</sup></span>
+                <select name="petCategory" data-pet-category required>
+                  <option value="Domestic" selected>Domestic</option>
+                  <option value="Wild">Wild</option>
+                </select>
+              </label>
+              <label class="form-field" data-field="petType">
+                <span>Pet type <sup>*</sup></span>
+                <select name="petType" required>
+                  <option value="BIRD">Bird</option>
+                  <option value="CAT">Cat</option>
+                  <option value="DOG">Dog</option>
+                  <option value="FISH">Fish</option>
+                  <option value="RABBIT">Rabbit</option>
+                </select>
+              </label>
+              <label class="form-field" data-field="petDob" data-dob-field>
+                <span>Pet date of birth <sup>*</sup></span>
+                <input type="date" name="petDob">
+                <small>Required when the category is Domestic.</small>
+              </label>
+              <label class="form-field is-hidden" data-field="petPlaceOfBirth" data-birthplace-field>
+                <span>Pet place of birth <sup>*</sup></span>
+                <input type="text" name="petPlaceOfBirth" placeholder="National park, shelter, etc.">
+                <small>Required when the category is Wild.</small>
+              </label>
+            </div>
+            <div class="form-messages" aria-live="polite">
+              <p class="form-success" data-create-message></p>
+            </div>
+            <button class="btn" type="submit">Save owner and pet</button>
+            <p class="panel__hint">You will be nudged to build the backend the moment you submit. That nudge is the
+              whole point.</p>
+          </form>
+        </article>
+      </div>
+      <div class="container hero__actions hero__actions--center">
+        <button class="btn" type="button" data-open-stats>View pet stats</button>
+        <a class="btn btn--ghost" href="courses.html">Learn the backend</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>&copy; <span data-current-year></span> Abhishek Verma</span>
+      <nav>
+        <a href="https://www.youtube.com/@abhishekvermaa10" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.linkedin.com/in/abhishekvermaa10" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/abhishekvermaa10" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://x.com/ytabhishekverma" target="_blank" rel="noopener">X</a>
+        <a href="https://github.com/abhishekvermaa10" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://topmate.io/abhishekvermaa10" target="_blank" rel="noopener">Topmate</a>
+        <a href="mailto:scaleupindiayt@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="modal" data-owner-modal hidden>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="ownerModalTitle">
+      <button class="modal__close" type="button" data-close-modal aria-label="Close owner details">&times;</button>
+      <h3 id="ownerModalTitle" data-owner-name>Owner</h3>
+      <p class="modal__subtitle" data-owner-subtitle></p>
+      <div class="modal__grid">
+        <div>
+          <h4>Owner details</h4>
+          <dl class="detail-list" data-owner-details></dl>
+        </div>
+        <div>
+          <h4>Pet details</h4>
+          <dl class="detail-list" data-pet-details></dl>
+        </div>
+      </div>
+      <form class="modal__form" data-update-form>
+        <label>
+          <span>New pet name</span>
+          <input type="text" name="petName" placeholder="Enter new pet name" required>
+        </label>
+        <button class="btn" type="submit">Update pet name</button>
+      </form>
+      <button class="btn btn--danger modal__danger" type="button" data-delete-owner>Delete owner and pet</button>
+      <p class="modal__hint">Real updates happen once you craft the Spring Boot backend. This UI just keeps the dream
+        alive.</p>
+    </div>
+  </div>
+
+  <div class="modal" data-stats-modal hidden>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="statsModalTitle">
+      <button class="modal__close" type="button" data-close-modal aria-label="Close stats">&times;</button>
+      <h3 id="statsModalTitle">Pet Statistics</h3>
+      <div data-stats-tree class="stats-tree"></div>
+    </div>
+  </div>
+
+  <div class="modal" data-info-modal hidden>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+      <button class="modal__close" type="button" data-close-modal aria-label="Close message">&times;</button>
+      <h3 id="infoModalTitle" data-info-title>Action unavailable</h3>
+      <p data-info-body></p>
+      <a class="btn" data-info-cta href="courses.html">Explore the roadmap</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/petistaan.js"></script>
+</body>
+
+</html>
