@@ -113,7 +113,7 @@ const AV_COURSES = [
     ],
     keyTakeaways: [
       'Master checked vs unchecked exceptions and design defensive APIs.',
-      'Pick the right data structure for any load and reason about time + memory.',
+      'Pick the right data structure for any load and reason about time and memory.',
       'Write concurrent code safely using executors, locks, and java.util.concurrent.',
     ],
     tableOfContent: [
@@ -555,7 +555,7 @@ const AV_COURSES = [
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfM7NmtpvG5tR5TyYctS6yCA', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-REST', type: 'code' },
-      { label: 'Apply Free Internship', url: 'https://topmate.io/abhishekvermaa10/1583789', type: 'internship' },
+      { label: 'Apply free internship', url: 'https://topmate.io/abhishekvermaa10/1583789', type: 'internship' },
     ],
     tags: [
       'REST', 
@@ -578,7 +578,7 @@ const AV_COURSES = [
     tagline: 'Break monoliths into independent microservices.',
     description: `Build a microservices playground from a monolith, covering centralized configuration, \n` +
       `service discovery, API gateways, resilience, tracing, and event-driven messaging.`,
-    playlistUrl: 'https://www.youtube.com/@abhishekvermaa10/playlists',
+    playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Microservices',
     internshipUrl: '',
     featured: true,
@@ -626,7 +626,7 @@ const AV_COURSES = [
       'spring-ai'
     ],
     resources: [
-      { label: 'Learn by watching', url: 'https://www.youtube.com/@abhishekvermaa10/playlists', type: 'video' },
+      { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Microservices', type: 'code' },
     ],
     tags: [
@@ -671,7 +671,7 @@ const AV_COURSES = [
       'Send Email with Attachment using SMTP | Email in Java with Maven',
       'Send Rich Text Email using Freemarker and SMTP | Email in Java with Maven',
       'Send Your First Email in Spring Boot',
-      'Professional HTML Emails with Attachments using Spring Boot + Freemarker',
+      'Professional HTML Emails with Attachments using Spring Boot and Freemarker',
       'Send User-Submitted Data & Files via Email in Spring Boot',
       'Send Emails in the Background with Spring Boot Async',
       'Send Emails locally with MailPit in Spring Boot',
@@ -724,7 +724,7 @@ const AV_COURSES = [
     ],
     keyTakeaways: [
       'Wire OpenAI/Gemini models using the Spring AI abstraction.',
-      'Add advisors, memory, and tool-calling using programmatic + declarative styles.',
+      'Add advisors, memory, and tool-calling using programmatic and declarative styles.',
       'Build RAG, multimodal flows, and MCP server/client combos.',
     ],
     tableOfContent: [
@@ -773,7 +773,7 @@ const AV_COURSES = [
     topics: '165 shorts',
     cover: 'img/courses/daily_interview_questions.webp',
     accent: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
-    tagline: 'Bite-sized Java + Spring interview drills every single day.',
+    tagline: 'Bite-sized Java and Spring interview drills every single day.',
     description: 'Micro lessons to keep your whiteboard brain warm.',
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfNd4lw3-DNYqyU07FShIwTE',
     repositoryUrl: '',
@@ -802,11 +802,11 @@ const AV_COURSES = [
     category: 'others',
     badge: 'Shorts',
     level: 'Snackable',
-    duration: '130+ shorts',
-    topics: '130+ shorts',
+    duration: '100+ shorts',
+    topics: '100+ shorts',
     cover: 'img/courses/daily_3_minute_coding.webp',
     accent: 'linear-gradient(135deg, #c471f5 0%, #fa71cd 100%)',
-    tagline: '3-minute Java/Spring/code hygiene hacks for Gen Z attention spans.',
+    tagline: '3-minute Java/Spring/code hygiene hacks for short attention spans.',
     description: 'Tiny clips that you can binge between stand-ups to keep skills sharp.',
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfMrTe3bSOTz6QCTpNypsA3O',
     repositoryUrl: '',

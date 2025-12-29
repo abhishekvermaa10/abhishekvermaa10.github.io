@@ -493,7 +493,7 @@
 
     const rootLevel = document.createElement('div');
     rootLevel.className = 'stats-tree__level stats-tree__level--root';
-    rootLevel.appendChild(createTreeNode('Petistaan', `${statsData.total} Pets`, 'root'));
+    rootLevel.appendChild(createTreeNode('Petistaan', `${statsData.total} pets`, 'root'));
     statsTree.appendChild(rootLevel);
 
     const categoriesLevel = document.createElement('div');
@@ -524,7 +524,7 @@
 
         typeOrder.forEach((typeKey) => {
           const count = genderData.type?.[typeKey] ?? 0;
-          leafRow.appendChild(createTreeNode(formatLabel(typeKey), `${count}`, 'leaf'));
+          leafRow.appendChild(createTreeNode(formatLabel(typeKey), `${count} pets`, 'leaf'));
         });
 
         genderBlock.appendChild(leafRow);

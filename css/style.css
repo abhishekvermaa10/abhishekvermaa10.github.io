@@ -1051,7 +1051,7 @@ img {
 }
 
 .form-field sup {
-  color: var(--accent);
+  color: #ff4b4b;
   font-size: 0.75em;
   margin-left: 0.15rem;
 }
