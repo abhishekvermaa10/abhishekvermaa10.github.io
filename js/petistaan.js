@@ -35,7 +35,7 @@
   const closeButtons = document.querySelectorAll('[data-close-modal]');
   const modals = document.querySelectorAll('.modal');
 
-  const allowedPetTypes = ['BIRD', 'CAT', 'DOG', 'FISH'];
+  const allowedPetTypes = ['BIRD', 'CAT', 'DOG', 'FISH', 'RABBIT'];
   const fieldLabels = {
     firstName: 'First name',
     lastName: 'Last name',
@@ -309,7 +309,7 @@
     }
 
     if (payload.petType && !allowedPetTypes.includes(payload.petType.toUpperCase())) {
-      addError('petType', 'Pet type must be Bird, Cat, Dog, or Fish.');
+      addError('petType', 'Pet type must be Bird, Cat, Dog, Fish or Rabbit.');
     }
 
     const category = (payload.petCategory || '').toLowerCase();
