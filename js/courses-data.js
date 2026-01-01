@@ -633,7 +633,7 @@ const AV_COURSES = [
       'Spring Cloud', 
       'Ops'
     ],
-    status: 'Upcoming',
+    status: 'Streaming free',
     hasDetail: true,
     href: 'course.html?course=spring-microservices-with-spring-boot',
   },
