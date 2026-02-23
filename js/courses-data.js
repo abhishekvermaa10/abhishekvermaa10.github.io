@@ -600,7 +600,7 @@ const AV_COURSES = [
       'Centralized Configuration using Spring Cloud Config',
       'Load Balancing using Spring Cloud LoadBalancer',
       'Service Discovery using Spring Cloud Netflix Eureka',
-      'Fault Tolerance & Resilience using Spring Cloud CircuitBreaker Resilience4j',
+      'Fault Tolerance using Spring Cloud CircuitBreaker Resilience4j',
       'API Gateway using Spring Cloud Gateway',
       'Inter-Service Communication using Spring Cloud OpenFeign',
       'Distributed Tracing using Micrometer Tracing with Brave and Zipkin',
