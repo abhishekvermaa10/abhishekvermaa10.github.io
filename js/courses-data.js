@@ -606,7 +606,7 @@ const AV_COURSES = [
       'Distributed Tracing using Zipkin',
       'Centralized Configuration using Spring Cloud HashiCorp Consul',
       'Service Discovery using Spring Cloud HashiCorp Consul',
-      'Inter-Service Communication using Spring HTTP Service Clients',
+      'Inter-Service Communication using Spring HTTP Service Client',
       'Observability using OpenTelemetry',
       'Event-Driven Communication using Apache Kafka',
     ],
