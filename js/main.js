@@ -228,7 +228,8 @@
   });
 
   document.querySelectorAll('[data-search-preset]').forEach((chip) => {
-    chip.addEventListener('click', () => {
+    chip.addEventListener('click', (event) => {
+      event.stopPropagation();
       const targetSelector = chip.dataset.targetInput;
       const target = document.querySelector(targetSelector);
       if (!target) return;
