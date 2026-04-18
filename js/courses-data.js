@@ -571,8 +571,8 @@ const AV_COURSES = [
     category: 'spring',
     badge: 'Architecture',
     level: 'Advanced',
-    duration: '≈ 30 hrs',
-    topics: '15 topics',
+    duration: '≈ 20 hrs',
+    topics: '16 topics',
     cover: 'img/courses/spring_microservices_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
     tagline: 'Break monoliths into independent microservices.',
@@ -607,8 +607,8 @@ const AV_COURSES = [
       'Centralized Configuration using Spring Cloud HashiCorp Consul',
       'Service Discovery using Spring Cloud HashiCorp Consul',
       'Inter-Service Communication using Spring HTTP Service Client',
-      'Observability using OpenTelemetry',
-      'Event-Driven Communication using Apache Kafka',
+      'Event-Driven Communication using Spring Apache Kafka',
+      'Observability using OpenTelemetry'
     ],
     prerequisiteCourses: [
       'java-basics', 
