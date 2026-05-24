@@ -580,7 +580,7 @@ const AV_COURSES = [
       `service discovery, API gateways, resilience, tracing, and event-driven messaging.`,
     playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Microservices',
-    internshipUrl: '',
+    internshipUrl: 'https://topmate.io/abhishekvermaa10/2115059',
     featured: true,
     vibes: [
       'Spring Cloud', 
