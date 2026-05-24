@@ -571,7 +571,7 @@ const AV_COURSES = [
     category: 'spring',
     badge: 'Architecture',
     level: 'Advanced',
-    duration: '≈ 20 hrs',
+    duration: '≈ 21 hrs',
     topics: '16 topics',
     cover: 'img/courses/spring_microservices_with_spring_boot.webp',
     accent: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
@@ -629,12 +629,14 @@ const AV_COURSES = [
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Microservices', type: 'code' },
+      { label: 'Apply free internship', url: 'https://topmate.io/abhishekvermaa10/2115059', type: 'internship' },
+      { label: 'Book 1:1 call', url: 'https://topmate.io/abhishekvermaa10/2115038', type: 'internship' }
     ],
     tags: [
       'Spring Cloud', 
       'Ops'
     ],
-    status: 'Streaming free',
+    status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=spring-microservices-with-spring-boot',
   },
