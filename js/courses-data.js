@@ -470,7 +470,8 @@ const AV_COURSES = [
     ],
     nextSteps: [
       'spring-rest-with-spring-boot', 
-      'spring-microservices-with-spring-boot'
+      'spring-microservices-with-spring-boot',
+      'spring-security-with-spring-boot'
     ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfPUg7_jffHmF_6MooTlH7rO', type: 'video' },
@@ -549,7 +550,8 @@ const AV_COURSES = [
       'java-database-connectivity-jdbc'
     ],
     nextSteps: [
-      'spring-microservices-with-spring-boot', 
+      'spring-microservices-with-spring-boot',
+      'spring-security-with-spring-boot', 
       'spring-ai'
     ],
     resources: [
@@ -624,6 +626,7 @@ const AV_COURSES = [
       'emailing-by-java'
     ],
     nextSteps: [
+      'spring-security-with-spring-boot',
       'spring-ai'
     ],
     resources: [
@@ -639,6 +642,84 @@ const AV_COURSES = [
     status: 'Always free',
     hasDetail: true,
     href: 'course.html?course=spring-microservices-with-spring-boot',
+  },
+  {
+    slug: 'spring-security-with-spring-boot',
+    title: 'Spring Security with Spring Boot',
+    category: 'spring',
+    badge: 'Security',
+    level: 'Advanced',
+    duration: '≈ 23 hrs',
+    topics: '23 topics',
+    cover: 'img/courses/spring_security_with_spring_boot.webp',
+    accent: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
+    tagline: 'Secure your Spring Boot applications.',
+    description: `Learn to implement security in Spring Boot applications, covering authentication, authorization, JWT, OAuth 2.0 and best practices.`,
+    playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW',
+    repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Security',
+    internshipUrl: '',
+    featured: true,
+    vibes: [
+      'Spring Boot', 
+      'Security'
+    ],
+    keyTakeaways: [
+      'Secure your Spring Boot applications with authentication and authorization.',
+      'Implement JWT and OAuth 2.0 for secure API access.',
+      'Follow best practices for securing your applications and protecting sensitive data.',
+    ],
+    tableOfContent: [
+      'Build a REST API for Spring Security',
+      'What Happens When You Add Spring Security?',
+      'How Does the Spring Security Filter Chain Work?',
+      'Customize Spring Security Using SecurityFilterChain',
+      'Create In-Memory Users in Spring Security',
+      'Password Encoding with BCryptPasswordEncoder',
+      'Role-Based Authorization in Spring Security',
+      'Method-Level Security with @PreAuthorize and @Secured',
+      'Database Authentication in Spring Security',
+      'Authorize Users to Access Their Own Resources',
+      'Build a Custom Login API',
+      'Create Custom Security Filters',
+      'What Is JWT and How Does It Work?',
+      'Generate JWT Tokens in Spring Security',
+      'Validate JWT Using OncePerRequestFilter',
+      'JWT Authentication in Spring Security',
+      'Read Roles from JWT',
+      'Implement Refresh Tokens',
+      'Return JSON Error Responses for Unauthorized Requests',
+      'Configure CORS in Spring Security',
+      'Secure APIs Using API Keys',
+      'How Do OAuth 2.0 and OpenID Connect Work?',
+      'Login with GitHub Using OAuth 2.0'
+    ],
+    prerequisiteCourses: [
+      'java-basics', 
+      'java-advanced', 
+      'maven', 
+      'hibernate', 
+      'spring-basics-with-spring-boot', 
+      'spring-data-jpa-with-spring-boot', 
+      'spring-rest-with-spring-boot'
+    ],
+    optionalPrerequisiteCourses: [
+      'java-database-connectivity-jdbc'
+    ],
+    nextSteps: [
+      'spring-microservices-with-spring-boot', 
+      'spring-ai'
+    ],
+    resources: [
+      { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW', type: 'video' },
+      { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Security', type: 'code' }
+    ],
+    tags: [
+      'Spring Boot', 
+      'Security'
+    ],
+    status: 'Coming soon',
+    hasDetail: true,
+    href: 'course.html?course=spring-security-with-spring-boot',
   },
   {
     slug: 'emailing-by-java',
@@ -688,7 +769,8 @@ const AV_COURSES = [
     ],
     optionalPrerequisiteCourses: [],
     nextSteps: [
-      'spring-microservices-with-spring-boot', 
+      'spring-microservices-with-spring-boot',
+      'spring-security-with-spring-boot', 
       'spring-ai'
     ],
     resources: [
@@ -752,7 +834,8 @@ const AV_COURSES = [
     ],
     optionalPrerequisiteCourses: [],
     nextSteps: [
-      'spring-microservices-with-spring-boot'
+      'spring-microservices-with-spring-boot',
+      'spring-security-with-spring-boot'
     ],
     resources: [
       { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfOTU8G_KcVIDe1gJYHAB8nT', type: 'video' },
