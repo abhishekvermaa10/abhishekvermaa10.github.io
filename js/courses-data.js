@@ -655,7 +655,7 @@ const AV_COURSES = [
     accent: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)',
     tagline: 'Secure your Spring Boot applications.',
     description: `Learn to implement security in Spring Boot applications, covering authentication, authorization, JWT, OAuth 2.0 and best practices.`,
-    playlistUrl: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW',
+    playlistUrl: 'https://www.youtube.com/playlist?list=PLMduWR41OFsQ',
     repositoryUrl: 'https://github.com/abhishekvermaa10/Spring-Security',
     internshipUrl: '',
     featured: true,
@@ -710,7 +710,7 @@ const AV_COURSES = [
       'spring-ai'
     ],
     resources: [
-      { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLJDwhlqmpSfO_i45MxRSKgn10q4rw3IhW', type: 'video' },
+      { label: 'Learn by watching', url: 'https://www.youtube.com/playlist?list=PLMduWR41OFsQ', type: 'video' },
       { label: 'Learn by coding', url: 'https://github.com/abhishekvermaa10/Spring-Security', type: 'code' }
     ],
     tags: [
